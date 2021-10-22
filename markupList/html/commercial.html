@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <meta name="mobile-web-app-capable" content="yes">  
+        <title>경남비즈니스플랫폼 - 상권정보</title>
+
+        <!-- js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        <!-- <script src="../resources/library/jquery-3.6.0.min.js"></script>  -->
+
+        <!-- css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" integrity="sha384-OX60W5no62t3a7IWb/778scS02RmUVFiMWgxiaEMwIlqYjLONUVz9xqTGVWlyiFH" crossorigin="anonymous"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="../resources/css/component.css" > <!-- 컴포넌트 --> 
+
+    </head> 
+    <body> 
+
+        
+        <header class="ui-header" id="header">
+
+            <div class="container">
+                <div class="nav-wrap">
+                    <figure>
+                        <img src="../resources/img/commercial-logo.png" alt="경상남도 비즈니스 플랫폼 로고 이미지" class="logo-img">
+                    </figure>
+                    <nav class="ui-navigation">
+                        <ul class="nav-list">
+                            <!-- todo : 메뉴 클릭 시 li 에 클래스 active 추가하여 활성화합니다. -->
+                            <li class="list-item active">
+                                <a href="#" class="list-link" title="상권정보">상권정보</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link" title="일자리 정보">일자리정보</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link" title="비즈니스 정보">비즈니스정보</a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#" class="list-link" title="커뮤니티">커뮤니티</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                      <!-- todo : 로그인 / 회원가입 / 검색 / 햄버거 버튼 영역 -->
+                    <div class="user-info">
+                        <div class="user-register">
+                            <a href="#" class="login" title="로그인">로그인</a>
+                            <a href="#" class="register" title="회원가입">회원가입</a>
+                        </div>
+
+
+                        <div class="additional-area">
+                            <!-- todo : 검색영역 -->
+                            <button type="button" aria-label="search" class=" icon-box search">
+                                
+                                <span class="icon-img icon-size-24 icon-img--search">
+                                    <span class="blind">검색버튼</span>
+                                </span>
+                            </button >
+
+                            <!-- todo : 햄버거 버튼 영역 -->
+                            <button type="button" aria-label="more-menu" class=" icon-box hamburger"><span class="icon-img icon-size-24 icon-img--hamburger"><span class="blind">햄버거 버튼</span></span></button >
+                        </div>
+                    </div>
+                </div>
+
+
+              
+            </div>
+        </header>
+
+        
+        <main class="layout-content">
+           <div class="content">
+                <aside class="sidebar sidebar--left">
+                    <div class="sidebar-inner">
+                        <!-- 섹션 1 : 로고 및 홈/나의후보지/상권정보 메뉴 레이어 -->
+                        <div class="sidebar-navigation">
+                            <img src="../resources/img/mini-logo.png" alt="경상남도 비즈니스 플랫폼 로고 아이콘" class="logo-icon">
+
+                            <ul class="sidebar-menu-list">
+                                <!-- todo : 메뉴 클릭 시 li 에 클래스  on 추가하여 버튼 활성화 합니다. -->
+                                <li class="sidebar-menu-item on"><a href="#" title="홈" class="sidebar-menu-link"><span class="sidebar-menu-text">홈</span></a></li>
+                                <li class="sidebar-menu-item"><a href="#" title="나의 후보지" class="sidebar-menu-link"><span class="sidebar-menu-text">나의 후보지</span></a></li>
+                                <li class="sidebar-menu-item"><a href="#" title="상권정보" class="sidebar-menu-link"><span class="sidebar-menu-text">상권정보</span></a></li>
+                            </ul>
+                        </div><!-- 
+                            
+
+
+                        섹션 2 : 상권정보 검색 및 하위 메뉴
+                    --><div class="side-detail-box">
+                            <!-- todo : 왼쪽 레이어 닫기 버튼 -->
+                            <button class="left-layer-close" aria-label="left-layer-close" type="button">
+                                <div class="icon">
+                                    <span class="icon-img icon-img--arrow-min icon-size-20"></span>
+                                </div>
+                            </button>
+                            <!-- // 왼쪽 레이어 닫기 버튼 -->
+                            
+
+                            <!-- 상권정보 검색 -->
+                            <div class="detail-title-wrap">
+                                <form action="">
+                                    <div class="title-box">
+                                        <h2 class="title">상권정보 검색</h2>
+                                    
+
+                                        <div class="xu-d-block xu-label-checkradio ">
+                                            <label class="xu-label-checkradio label-box label-box--bookmark">
+                                                
+                                                <span class="check-label-text  check-label-text--bookmark">저장한 검색</span>
+                                                <input type="checkbox" checked="checked" name="" id="">
+                                                
+                                                <div class="icon-outline icon-outline--bookmark ">
+                                                    <span class="icon icon-img--bookmark on icon-size-13"></span>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="search-form">
+                                        <div class="search-form-box">
+                                            <div class="flex-item--row search-input-box">
+                                                <div class="flex-item" style="margin-right: 12px; height: 24px; width: 8%;">
+                                                    <div class="icon">
+                                                        <span class="icon-img icon-img--search icon-size-24"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-item" style="width:90%;">
+                                                    <input type="text" name="" id="" class="flex-item-input" style="width:100%;" placeholder="도로명, 건물번호, 건물명 검색">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <button type="submit" aria-label="search_btn" class="search-btn flex-item--row">
+                                            <span class="flex-item">상세 검색 필터</span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- // 상권정보 검색 -->
+
+
+                            
+                            <div class="content-container">
+
+                                <!-- 인기검색 레이어 -->
+                                <div class="content-title">
+                                    <h3 class="title title--popular ">인기검색 업종</h3>
+                                    
+                                    <!-- todo : 인기검색 업종 리스트가 나열됩니다. -->
+                                    <ul class="tag-list">
+                                        <li class="tag-item"><a href="#" class="tag-link" title="패스트푸드"><span class="tag-text">패스트푸드</span></a></li>
+                                        <li class="tag-item"><a href="#" class="tag-link" title="반려동물 관련"><span class="tag-text">반려동물 관련</span></a></li>
+                                        <li class="tag-item"><a href="#" class="tag-link" title="오락"><span class="tag-text">오락</span></a></li>
+                                        
+                                    </ul>
+                                </div>
+                                <!-- //인기검색 레이어 -->
+
+
+                            
+                                <div class="search-content">
+                                    <form action="">
+                                        <!-- todo : 상세검색 -->
+                                        <div class="content-detail" >
+                                            <h3 class="title  title--search">상세 검색</h3>
+
+                                            <div class="select-wrap">
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>시/군/구를 선택하세요.</option>
+                                                    <option value="">서울특별시</option>
+                                                </select>
+
+                                                <!-- todo : 이전의 셀렉트박스에서 선택하지 않을 경우 disabled 상태로 남게 됩니다. -->
+                                                <select name="" id="" disabled>
+                                                    <option value="" disabled selected>읍/면/동을 선택하세요</option>
+                                                    <option value="">조안면</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="multiple-select-wrap">
+                                                
+                                                <div class="multiple-list-box multiple-list-box--one">
+                                                    <span class="list-title">1차 업종선택</span>
+                                                    <ul class="multiple-list multiple-list--one-depth">
+
+                                                        <!-- todo : 클릭할 경우 li 에 클래스 block 추가하여 활성화합니다. -->
+                                                        <li class="multiple-list-item block">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--one-depth  all-link" title="전체선택">전체선택</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--one-depth " title="음식">음식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--one-depth " title="서비스">서비스</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="multiple-list-box multiple-list-box--two">
+                                                    <span class="list-title">2차 업종선택</span>
+                                                    <ul class="multiple-list multiple-list--two-depth">
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth  all-link" title="전체선택">전체선택</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외국식">기타 외국식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+
+                                                        <li class="multiple-list-item">
+                                                            <a href="#" class="multiple-list-link multiple-list-link--two-depth " title="기타 외식">기타 외식</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <span class="list-title">검색 년/월을 선택하세요.</span>
+
+                                            <div class="select-wrap">
+                                                <select name="" id="">
+                                                    <option value="" disabled selected>검색 년/월을 선택하세요.</option>
+                                                    <option value="">2021년 7월</option>
+                                                </select>
+                                            </div>
+
+                                            <!-- todo : 후보지 정보, 인구정보 버튼 / 필요시 인라인 스타일의 마진값을 변경할 수 있습니다. -->
+                                            <div class="info-btn-wrap" style="margin-top:30px;">
+                                                <button type="button" aria-label="candidate-btn" class="search-btn candidate-btn flex-item--row">
+                                                    <span class="flex-item">후보지 정보</span>
+                                                </button>
+                                                <button type="button" aria-label="population-btn" class="defalut--border-btn population-btn flex-item--row">
+                                                    <span class="flex-item">인구 정보</span>
+                                                </button>
+                                            </div>
+
+ 
+                                            <!-- todo : 필터초기화 & 선택 필터 저장 버튼 -->
+                                            <div class="submit-btn-box">
+                                                <div class="option-box flex--row">
+                                                    <div class="xu-d-block xu-label-checkradio ">
+                                                        <button class="xu-label-checkradio label-box" type="button" aria-label="fillter-reset">
+                                                            <div class="icon-outline">
+                                                                <span class="icon icon-img--reset icon-size-13"></span>
+                                                            </div>
+                                                            <span class="check-label-text check-label-text--reset">필터초기화</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="xu-d-block xu-label-checkradio ">
+                                                        <label class="xu-label-checkradio label-box label-box--bookmark">
+                                                            
+                                                            <span class="check-label-text check-label-text--bookmark">선택 필터 저장</span>
+                                                            <input type="checkbox" checked="checked" name="" id="">
+                                                            
+                                                            <div class="icon-outline icon-outline--bookmark ">
+                                                                <span class="icon icon-img--bookmark on icon-size-13"></span>
+                                                            </div>
+                                                        </label>
+                                                    </div>
+                
+                                                </div>
+
+                                            </div>
+
+                                            <!-- todo : 검색 버튼 -->
+                                            <button type="submit" aria-label="detail-search" class="defalut-btn flex-item--row detail-search">
+                                                <span class="flex-item">검색</span>
+                                            </button> 
+                                        </div>
+                                        <!-- //상세검색 -->
+
+
+                                        <!-- todo : 즐겨찾기  -->
+                                        <div class="content-detail" style="display: none;" >
+                                            <!-- 즐겨찾기 목록 -->
+                                            <div class="favorite-box-wrap">
+                                                <div class="favorite-box">
+                                                    <h3 class="title  title--favorite">즐겨찾기 목록</h3>
+
+                                                    <ul class="title-content-list">
+                                                        <li class="title-content-item">
+                                                            <a href="#" class="title-content-link">
+                                                                <div class="item-info">
+                                                                    <!-- todo : 가게 이름 -->
+                                                                    <span class="title-middle">호별관</span>
+
+                                                                    <!-- todo : 가게 분류 -->
+                                                                    <span class="title-sub">음식점/일식당</span>
+                                                                </div>
+
+                                                                <!-- todo : 가게 홍보글 -->
+                                                                <p class="content-info">
+                                                                    매일매일 직접 손질한 신선한 재료로 카이센동과 사사사사
+                                                                </p>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- //즐겨찾기 목록 -->
+
+                                                <!-- 즐겨찾기 등록하기 -->
+                                                <div class="favorite-box">
+                                                    <h3 class="title  title--favorite">즐겨찾기 등록하기</h3>
+
+                                                    <ul class="title-content-list">
+                                                        <li class="title-content-item">
+                                                            <div class="register-form-box">
+                                                                <div class="form-box">
+                                                                    <!-- todo : 등록할 가게 이름 -->
+                                                                    <span class="title-middle">후보지명</span>
+                                                                    <input type="text" name="" id="" class="register-info" aria-label="register-name" placeholder="후보지를 입력해 주세요">
+                                                                </div>
+
+                                                                <!-- todo : 등록할 가게에 대한 메모 -->
+                                                                <div class="form-box">
+                                                                    <input type="text" name="" id="" aria-label="register-memo" class="register-info register-info--memo" placeholder="메모를 입력해 주세요">
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <!-- //즐겨찾기 등록하기 -->
+                                            </div>
+
+                                            <!-- todo : 즐겨찾기 등록하기 버튼 -->
+                                            <button class="defalut-btn favorite-submit-btn flex-item--row" type="submit" aria-label="favorite-submit-btn">
+                                                <span class="flex-item">등록하기</span>
+                                            </button>
+                                        </div>
+                                        <!-- // 즐겨찾기  -->
+                                    </form>
+
+                                    <!-- 검색 리스트 -->
+                                    <div class="content-detail" style="display: block;" >
+                                        <h3 class="title  title--search-list">검색내역 리스트</h3>
+
+                                        <div class="content-cell-list-wrap search-list-wrap">
+                                            <!-- todo : 검색 내역 리스트 -->
+                                            <ul class="column-cell-list">
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">건물명</span>
+                                                    <span class="cell-item-content title-middle">블루샥 창원시청점</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">건물번호</span>
+                                                    <span class="cell-item-content content-info ">6/3층</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">지상/지하층수</span>
+                                                    <span class="cell-item-content content-info ">지상/지하층수</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">연면적</span>
+                                                    <span class="cell-item-content content-info ">42/31m²</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">판매시설</span>
+                                                    <span class="cell-item-content content-info ">판매시설</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+
+                                        <div class="content-cell-list-wrap search-list-wrap">
+                                            <ul class="column-cell-list">
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">건물명</span>
+                                                    <span class="cell-item-content title-middle">제주생선구이올래밥상 창원시</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">건물번호</span>
+                                                    <span class="cell-item-content content-info ">6/3층</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">지상/지하층수</span>
+                                                    <span class="cell-item-content content-info ">지상/지하층수</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">연면적</span>
+                                                    <span class="cell-item-content content-info ">42/31m²</span>
+                                                </li>
+                                                <li class="cell-item ">
+                                                    <span class="cell-item-content content-info ">판매시설</span>
+                                                    <span class="cell-item-content content-info ">판매시설</span>
+                                                </li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                    <!-- //검색 리스트 -->
+                                </div>    
+                            </div>
+                            
+                            
+
+
+                            <!-- 아이콘 모음 레이어 -->
+                            <div class="side-icon-layer" style="display: none;">
+                                <div class="icon-box-list">
+                                    <ul class="flex-item--row">
+                                        <li class="flex-item icon-item">
+                                            <a href="#" class="icon-item-link flex-item--row" title="음식점">
+                                                <div class="icon flex-item option-icon-box">
+                                                    <span class="icon-img icon-img--combine icon-size-22" style="-webkit-mask-image: url(../resources/img/icon-unactive.svg);" ></span>
+                                                </div>
+                                                <span class="title-middle flex-item icon-named optino-icon-box">음식점</xspan>
+                                            </a>
+                                        </li>
+
+                                        <li class="flex-item icon-item">
+                                            <a href="#" class="icon-item-link flex-item--row" title="음식점">
+                                                <div class="icon flex-item option-icon-box">
+                                                    <span class="icon-img icon-img--combine icon-size-22" style="-webkit-mask-image: url(../resources/img/icon-unactive.svg);"></span>
+                                                </div>
+                                                <span class="title-middle flex-item icon-named optino-icon-box">음식점</xspan>
+                                            </a>
+                                        </li>
+
+                                        <li class="flex-item icon-item">
+                                            <a href="#" class="icon-item-link flex-item--row" title="음식점">
+                                                <div class="icon flex-item option-icon-box">
+                                                    <span class="icon-img icon-img--combine icon-size-22" style="-webkit-mask-image: url(../resources/img/icon-unactive.svg);"></span>
+                                                </div>
+                                                <span class="title-middle flex-item icon-named optino-icon-box">음식점</xspan>
+                                            </a>
+                                        </li>
+
+                                        <li class="flex-item icon-item">
+                                            <a href="#" class="icon-item-link flex-item--row" title="음식점">
+                                                <div class="icon flex-item option-icon-box">
+                                                    <span class="icon-img icon-img--combine icon-size-22" style="-webkit-mask-image: url(../resources/img/icon-unactive.svg);"></span>
+                                                </div>
+                                                <span class="title-middle flex-item icon-named optino-icon-box">음식점</xspan>
+                                            </a>
+                                        </li>
+
+                                        <li class="flex-item icon-item">
+                                            <a href="#" class="icon-item-link flex-item--row" title="음식점">
+                                                <div class="icon flex-item option-icon-box">
+                                                    <span class="icon-img icon-img--combine icon-size-22" style="-webkit-mask-image: url(../resources/img/icon-unactive.svg);"></span>
+                                                </div>
+                                                <span class="title-middle flex-item icon-named optino-icon-box">음식점</xspan>
+                                            </a>
+                                        </li>
+
+                                        <!-- todo : 아이콘 더보기 버튼 -->
+                                        <li class="flex-item icon-item">
+                                            <a href="#" class="icon-item-link flex-item--row icon-more-btn" title="캠핌장">
+                                                <div class="icon">
+                                                    <span class="icon-img icon-img--circle"></span>
+                                                </div>
+
+                                                
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- //아이콘 모음 레이어 -->
+                        </div><!-- 
+
+
+                        
+                        섹션 3 : 섹션 2에서 검색 내역 리스트 클릭 시 나타는 상세 정보 레이어
+                    --><div class="side-list-detail-info-wrap">
+                            <div class="wrap-inner">
+                                <div class="fix-head">
+
+                                    <!-- todo : 아이콘 박스 리스트 -->
+                                    <div class="fix-icon-list-box">
+                                        <ul class="fix-icon-btn flex-item--row">
+                                            <li class="fix-icon-list"><span class="blind">여백</span></li>
+
+                                            <li class="fix-icon-list">
+                                                <!-- todo : 활성화 하고자 할 시, a 태그에 클래스 active 추가 -->
+                                                <a href="#" class="fix-btn-link flex-item--column active" title="후보지 등록">
+                                                    <div class="icon">
+                                                        <span class="icon-img icon-size-20 fix-icon-item" style="-webkit-mask-image:url(../resources/img/icon-outline-plus.svg)"></span>
+                                                    </div>
+
+                                                    <span class="fix-icon-name">후보지 등록</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="fix-icon-list">
+                                                <a href="#" class="fix-btn-link flex-item--column" title="후보지 제외">
+                                                    <div class="icon">
+                                                        <span class="icon-img icon-size-20 fix-icon-item" style="-webkit-mask-image:url(../resources/img/icon-outline-minus.svg)"></span>
+                                                    </div>
+
+                                                    <span class="fix-icon-name">후보지 제외</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="fix-icon-list">
+                                                <a href="#" class="fix-btn-link flex-item--column" title="엑셀다운로드">
+                                                    <div class="icon">
+                                                        <span class="icon-img icon-size-20 fix-icon-item" style="-webkit-mask-image:url(../resources/img/icon-outline-down.svg)"></span>
+                                                    </div>
+
+                                                    <span class="fix-icon-name">엑셀다운로드</span>
+                                                </a>
+                                            </li>
+
+                                            <li class="fix-icon-list">
+                                                <a href="#" class="fix-btn-link flex-item--column" title="출력">
+                                                    <div class="icon">
+                                                        <span class="icon-img icon-size-20 fix-icon-item" style="-webkit-mask-image:url(../resources/img/icon-outline-print.svg)"></span>
+                                                    </div>
+
+                                                    <span class="fix-icon-name">출력</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                    <!-- todo : 정보 내역 탭 부분 -->
+                                    <div class="info-tab-wrap">
+                                        <ul class="flex-item--row info-tab-flex">
+                                            <li class="flex-item flex-tab-item">
+                                                <!-- todo : 활성화 시, 클래스 active 추가합니다. -->
+                                                <a href="#" class="tab-link flex-item--row active" title="건물정보">
+                                                    <div class="flex-item">건물정보</div>
+                                                </a>
+                                            </li>
+                                            <li class="flex-item flex-tab-item">
+                                                <a href="#" class="tab-link flex-item--row" title="사업체정보">
+                                                    <div class="flex-item">사업체정보</div>
+                                                </a>
+                                            </li>
+                                            <li class="flex-item flex-tab-item">
+                                                <a href="#" class="tab-link flex-item--row" title="인구정보">
+                                                    <div class="flex-item">인구정보</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="detail-info-body">
+                                    <div class="detail-info-inner">
+
+                                        <!-- todo : 검색내역 리스트 영역 -->
+                                        <div class="tab-content search-detail-list-box" >
+                                            <h3 class="title title--detail-search-list ">검색내역 리스트</h3>
+
+                                            <!-- todo: 검색내역 지도 부분 -->
+                                            <div class="map-area ">
+                                                <!-- todo : 지도가 여러개일 시 div.map-item 을 여러개로 출력하면 됩니다.  -->
+                                                <div class="map-item"><!-- todo : 맵 적용 영역 -->지도</div>
+                                                <div class="map-item"><!-- todo : 맵 적용 영역 -->지도</div>
+                                                <div class="map-item"><!-- todo : 맵 적용 영역 -->지도</div>
+                                            </div>
+
+                                            <div class="table-outline-wrap">
+                                                <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                    <colgroup>
+                                                        <col width="2.5">
+                                                        <col width="7.5">
+                                                    </colgroup>
+                                                    
+                                                    <tbody>
+                                                        <tr>
+                                                            <th class="gray-info">한식 업종 평균 매출</th>
+                                                            <td class="content-info">한식 업종 평균 예상매출액 : 12,923,368 원 (4등급)</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="gray-info">메모</th>
+                                                            <td class="content-info">주변 상권이 좋아 주의깊게 보는 곳임</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title">건물 기본 정보</h3>
+
+                                                <div class="table-outline-wrap">
+                                                    <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                        <colgroup>
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                        </colgroup>
+                                                        
+                                                        <tbody>
+                                                            <tr>
+                                                                <th class="gray-info">주소</th>
+                                                                <td class="gray-info" colspan="3">경상남도 창원시 마산합포구 대창동 14</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="gray-info">건물번호</th>
+                                                                <td class="content-info">123-1</td>
+                                                                <td class="gray-info">건물 연면적</td>
+                                                                <td class="content-info">123 ㎡ </td>
+                                                             
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="gray-info">배후지영역 면적</th>
+                                                                <td class="content-info">1,123 ㎡ </td>
+                                                                <td class="gray-info">지상층수</td>
+                                                                <td class="content-info">1층</td>
+                                                             
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="gray-info">지하층수</th>
+                                                                <td class="content-info">1층</td>
+                                                                <td class="gray-info">총 주차수</td>
+                                                                <td class="content-info">1층</td>
+                                                             
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title">건물 주변 정보</h3>
+
+                                                <div class="table-outline-wrap">
+                                                    <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                        <colgroup>
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                        </colgroup>
+                                                        
+                                                        <tbody>
+                                                           
+                                                            <tr>
+                                                                <th class="gray-info">지하철역 거리</th>
+                                                                <td class="content-info">100 ㎡</td>
+                                                                <td class="gray-info">버스정류장 거리</td>
+                                                                <td class="content-info">100 ㎡</td>
+                                                             
+                                                            </tr>
+                                                            <tr>
+                                                                <th class="gray-info">도로거리</th>
+                                                                <td class="content-info">100 ㎡</td>
+                                                                <td class="gray-info"></td>
+                                                                <td class="content-info"></td>
+                                                             
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+
+                                            <!-- todo : 페이지네이션 영역-->
+                                            <div class="pagination-area">
+                                                <div class="paging-list-wrap">
+                                                    <ul class="paging-btn-list">
+                                                        <!-- todo : 페이징 이전 버튼 -->
+                                                        <li class="paging-btn-item paging-btn-prev">
+                                                            <a href="#" class="paging-btn-link" title="이전 버튼">
+                                                                <div class="icon">
+                                                                    <span class="icon-img icon-img--paging prev icon-size-16">
+                                                                        <span class="blind">이전 버튼</span>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+
+                                                        <!-- todo : 버튼 활성화 시 li 에 클래스 active 추가합니다. -->
+                                                        <li class="paging-btn-item active">
+                                                            <a href="#" class="paging-btn-link" title="1"><span class="paging-text">1</span></a>
+                                                        </li>
+                                                        <li class="paging-btn-item">
+                                                            <a href="#" class="paging-btn-link" title="2"><span class="paging-text">2</span></a>
+                                                        </li>
+
+                                                        <!-- todo : 페이징 다음 버튼 -->
+                                                        <li class="paging-btn-item paging-btn-next">
+                                                            <a href="#" class="paging-btn-link" title="이전 버튼">
+                                                                <div class="icon">
+                                                                    <span class="icon-img icon-img--paging next icon-size-16">
+                                                                        <span class="blind">다음 버튼</span>
+                                                                    </span>
+                                                                </div>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- // 검색내역 리스트 영역 -->
+
+
+                                        <!-- todo : 사업체정보 -->
+                                        <div class="tab-content search-detail-list-box" style="display: none;">
+                                            <h3 class="title title--detail-search-list ">사업체 정보</h3>
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title">건물 내 전체 사업체 목록</h3>
+
+                                                <div class="table-outline-wrap">
+                                                    <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                        <colgroup>
+                                                            <col width="2">
+                                                            <col width="5.5">
+                                                            <col width="2.5">
+                                                            
+                                                        </colgroup>
+
+                                                        <thead>
+                                                            <th class="gray-info" style="text-align: center;">순번</th>
+                                                            <th class="gray-info" style="text-align: center;">사업체명</th>
+                                                            <th class="gray-info" style="text-align: center;">업종</th>
+                                                        </thead>
+                                                        
+                                                        <tbody>
+                                                           
+                                                            <tr>
+                                                                <td style="text-align: center;" class="gray-info">1</td>
+                                                                <td style="text-align: center;" class="content-info">오늘내일 네일아트</td>
+                                                                <td class="content-info" style="text-align: center;" >미용실</td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- todo : 페이지 네이션  -->
+                                                <div class="pagination-area">
+                                                    <div class="paging-list-wrap">
+                                                        <ul class="paging-btn-list">
+                                                            <!-- todo : 페이징 이전 버튼 -->
+                                                            <li class="paging-btn-item paging-btn-prev">
+                                                                <a href="#" class="paging-btn-link" title="이전 버튼">
+                                                                    <div class="icon">
+                                                                        <span class="icon-img icon-img--paging prev icon-size-16">
+                                                                            <span class="blind">이전 버튼</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+    
+                                                            <!-- todo : 버튼 활성화 시 li 에 클래스 active 추가합니다. -->
+                                                            <li class="paging-btn-item active">
+                                                                <a href="#" class="paging-btn-link" title="1"><span class="paging-text">1</span></a>
+                                                            </li>
+                                                            <li class="paging-btn-item">
+                                                                <a href="#" class="paging-btn-link" title="2"><span class="paging-text">2</span></a>
+                                                            </li>
+    
+                                                            <!-- todo : 페이징 다음 버튼 -->
+                                                            <li class="paging-btn-item paging-btn-next">
+                                                                <a href="#" class="paging-btn-link" title="이전 버튼">
+                                                                    <div class="icon">
+                                                                        <span class="icon-img icon-img--paging next icon-size-16">
+                                                                            <span class="blind">다음 버튼</span>
+                                                                        </span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title content-table-title--flex-side ">
+                                                    건물 내 업종별 사업체 수
+                                                    <span class="content-table-sub-title">전체 등록된 사업체 수 : 100개</span>
+                                                </h3>
+
+                                                <div class="table-outline-wrap">
+                                                    <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                        <colgroup>
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                            <col width="2.5">
+                                                        </colgroup>
+                                                        
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="text-align: center; color: #3578dc;" class="gray-info">한식</td>
+                                                                <td style="text-align: center;" class="content-info">10</td>
+                                                                <td style="text-align: center; color: #3578dc;" class="gray-info">분식</td>
+                                                                <td style="text-align: center;" class="content-info">2</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="text-align: center; color: #3578dc;" class="gray-info">한식</td>
+                                                                <td style="text-align: center;" class="content-info">10</td>
+                                                                <td style="text-align: center; color: #3578dc;" class="gray-info">분식</td>
+                                                                <td style="text-align: center;" class="content-info">2</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+ 
+                                                </div>
+
+                                                <!-- todo : 테이블 내용 더보기 버튼 / 클릭 시 table 내의 tr 갯수 늘어남. -->
+                                                <button type="button" aria-label="table-content-more-view" class="content-info table-content-more-view-btn flex-item--row">
+                                                    <span class="flex-item">더보기</span>
+                                                </button>
+                                            </div>
+
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title content-table-title--flex-side ">
+                                                    배후지 내 동일 업종의 사업체 목록
+                                                    <span class="content-table-sub-title">조회 업종 :  한식</span>
+                                                </h3>
+
+                                                <div class="table-outline-wrap">
+                                                    <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                        <colgroup>
+                                                            <col width="2">
+                                                            <col width="5.5">
+                                                            <col width="2.5">
+                                                            
+                                                        </colgroup>
+
+                                                        <thead>
+                                                            <th class="gray-info" style="text-align: center;">순번</th>
+                                                            <th class="gray-info" style="text-align: center;">사업체명</th>
+                                                            <th class="gray-info" style="text-align: center;">프렌차이즈 여부</th>
+                                                        </thead>
+                                                        
+                                                        <tbody>
+                                                           
+                                                            <tr>
+                                                                <td style="text-align: center;" class="gray-info">1</td>
+                                                                <td style="text-align: center;" class="content-info">양평해장국</td>
+                                                                <td class="content-info" style="text-align: center;" >한식</td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+
+                                                <!-- todo : 페이지 네이션 영역 -->
+                                            </div>
+
+                                            
+                                        </div>
+                                        <!-- // 사업체정보 -->
+
+
+                                        <!-- todo : 인구정보 -->
+                                        <div class="tab-content search-detail-list-box" style="display: none;">
+                                            <h3 class="title title--detail-search-list ">인구 정보</h3>
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title">배후지 기준 남/여 보행인구 수</h3>
+
+                                                <div class="chart-content-wrap">
+                                                    차트 영역
+                                                </div>
+                                          
+                                            </div>
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title">요일별 보행 인구수 / 나이대별 보행인구수</h3>
+
+                                                <div class="chart-content-wrap">
+                                                    차트 영역
+                                                </div>
+                                          
+                                            </div>
+
+                                            <div class="content-table">
+                                                <h3 class="title--navy title-16-b content-table-title">건물 내 전체 사업체 목록</h3>
+
+                                                <div class="table-outline-wrap">
+                                                    <table class="table-content" border="0" colspan="0" rowspan="0">
+                                                        <colgroup>
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            <col width="1">
+                                                            
+                                                        </colgroup>
+
+                                                        <thead>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">구분</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">일</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">월</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">화</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">수</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">목</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">금</th>
+                                                            <th class="gray-info" style="text-align: center; color: #3578dc;">토</th>
+                                                        </thead>
+                                                        
+                                                        <tbody>
+                                                           
+                                                            <tr>
+                                                                <th class="gray-info" style="text-align: center; color: #3578dc;">00시</th>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                                <td  class="content-info" style="text-align: center;">1,234명</td>
+                                                            </tr>
+                                                            
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <!-- todo : 테이블 내용 더보기 버튼 / 클릭 시 table 내의 tr 갯수 늘어남. -->
+                                                <button type="button" aria-label="table-content-more-view" class="content-info table-content-more-view-btn flex-item--row">
+                                                    <span class="flex-item">더보기</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <!-- // 인구정보 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </aside>
+
+                <section class="content-section">
+                    <article>지도</article>
+                </section>
+
+
+                <!-- 가게 상세 정보 & 후보지 등록 레이어 -->
+                <aside class="sidebar sidebar--right " style="display: block;">
+                    <div class="sidebar-inner">
+                        <!-- 가게 상세정보 레이어 -->
+                        <div class="right-layer market-detail-wrap">
+                            <div class="wrap-inner" style="position: relative; height: 100%; ">
+                                <!-- 가게정보  -->
+                                <div class="detail-content-box">
+                                    <div class="icon layer-close-btn">
+                                        <span class="icon-img icon-img--close icon-size-24"></span>
+                                    </div>
+
+
+                                    <div class="detail-img-info">
+                                        <!-- todo : 마켓 이미지 -->
+                                        <img src="../resources/img/market-sample.png" alt="마켓 이미지" class="img-item">
+                                    </div>
+
+                                    <div class="detail-content-info">
+                                        <div class="content-info-text">
+                                            <!-- todo : 마켓 종류 -->
+                                            <span class="title-sub title-sub--market">음식점/일식당</span>
+
+                                            <!-- todo : 마켓 이름 -->
+                                            <h3 class="detail-title">더페이머스버거 창원점</h3>
+
+                                            <div class="address">
+                                                <div class="icon">
+                                                    <span class="icon-img icon-img--address icon-size-20 mt-1"></span>
+                                                </div>
+                                                <p class="gray-info gray-info--address">
+                                                    건물주소 : 경상남도 창원시 마산합포구 대창동 14
+                                                </p>
+                                            </div>
+                                        </div>
+
+
+                                        <!-- todo : 건물정보 표 -->
+                                        <div class="content-cell-list-wrap">
+                                            <ul class="column-cell-list">
+                                                <li class="cell-item">
+                                                    <span class="cell-item-content gray-info gray-info--cell-title">건물번호</span>
+                                                    <span class="cell-item-content content-info cell-content">123-1</span>
+                                                </li>
+
+                                                <li class="cell-item">
+                                                    <span class="cell-item-content gray-info gray-info--cell-title">전체 사업체 수</span>
+                                                    <span class="cell-item-content content-info cell-content">12개</span>
+                                                </li>
+
+                                                <li class="cell-item">
+                                                    <span class="cell-item-content gray-info gray-info--cell-title">한식 업종 평균</span>
+                                                    <span class="cell-item-content content-info cell-content">12,345,678원 <span class="level-text">(4등급)</span></span>
+                                                </li>
+
+                                                <li class="cell-item">
+                                                    <span class="cell-item-content gray-info gray-info--cell-title">연면적 : 123 ㎡  /  총 주차수 : 4대  /  승강기 : 1대</span>
+                                                </li>
+                                            </ul>
+
+                                            <div class="content-detail-btn-box">
+                                                <button class="btn-type flex-item--row more-btn defalut--border-btn" aria-label="more-info-btn" type="button">
+                                                    <span class="flex-item">상세정보</span>
+                                                </button>
+                                                <button class="btn-type flex-item--row register-btn defalut-btn" aria-label="register-btn" type="button">
+                                                    <span class="flex-item">후보지 등록</span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //가게정보  -->
+
+                                <!-- 후보지등록 -->
+                                <div class="erollment-box">
+                                    <form action="">
+                                        <div class=" bottom-line-title-box bottom-line-title-box--mb34">
+                                            <div class="icon">
+                                                <span class="icon-img icon-img--heart icon-size-26"></span>
+                                            </div>
+
+                                            <span class="title title--register">후보지 등록</span>
+                                        </div>
+
+                                        <div class="">
+                                            <div class="content-cell-list-wrap">
+                                                <ul class="column-cell-list">
+                                                    <li class="cell-item cell-item--resiger">
+                                                        <span class="cell-item-content gray-info gray-info--cell-title">업종선택</span>
+                                                        <select name="" id="" class="register-select-custom">
+                                                            <option value="" disabled selected >업종을 선택하세요</option>
+                                                            <option value="">전문직</option>
+                                                        </select>
+                                                    </li>
+
+                                                    <li class="cell-item cell-item--resiger">
+                                                        <span class="cell-item-content gray-info gray-info--cell-title">후보지명</span>
+                                                        <input type="text" name="" id="" class="register-info" aria-label="register-name" placeholder="후보지를 입력해 주세요">
+                                                    </li>
+
+                                                    <li class="cell-item cell-item--resiger">
+                                                        <span class="cell-item-content gray-info gray-info--cell-title">메모</span>
+                                                        <input type="text" name="" id="" aria-label="register-memo" class="register-info register-info--memo" placeholder="메모를 입력해 주세요">
+                                                    </li>
+                                                </ul>
+
+                                                <div class="content-detail-btn-box">
+                                                    <button class="btn-type flex-item--row more-btn defalut--border-btn" aria-label="more-info-btn" type="button">
+                                                        <span class="flex-item">취소</span>
+                                                    </button>
+                                                    <button class="btn-type flex-item--row register-btn defalut-btn" aria-label="register-btn" type="button">
+                                                        <span class="flex-item">등록</span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- //후보지등록 -->
+                        </div>
+                        <!-- //가게 상세정보 레이어 -->
+                    </div>
+                </aside>
+                <!-- //가게 상세 정보 & 후보지 등록 레이어 -->
+
+
+            </div>
+            
+        </main>
+
+        <script>
+            $(function(){
+                function side_content_h () {
+                    var all_h = $('.side-detail-box').outerHeight();
+                    
+                    var top_content = $('.detail-title-wrap').outerHeight();
+                    var total = all_h - top_content - 115 ;
+
+                    $('.search-content').css('height', total);
+                    
+                    
+
+                }side_content_h();
+
+                $(window).resize(function(){
+                    side_content_h();
+                });
+
+
+
+
+
+                function main_h (){
+                    var window_all = $(window).height();
+                    var theme_h = $('.ui-header').outerHeight();
+                    var main_total = window_all - theme_h  ;
+
+                    $('.content').css('min-height', main_total);
+                    $('.wrap-inner').css('height', main_total);
+                    
+                     $('.sidebar--right').css('height', window_all - 100);
+                    // $('.side-detail-box').css('min-height', window_all);
+
+                }main_h();
+
+                $(window).resize(function(){
+                    main_h();
+                });
+            });
+        </script>
+    </body>
+</html>    

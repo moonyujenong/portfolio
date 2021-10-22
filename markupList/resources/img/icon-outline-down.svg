@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / 카테고리01 Copy 8@3x</title>
+    <g id="상권정보" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-카테고리01-Copy-8">
+            <rect id="Rectangle-Copy-31" stroke="#969FAF" x="0.5" y="0.5" width="19" height="19" rx="4"></rect>
+            <g id="자산-41" transform="translate(5.000000, 5.000000)" fill="#969FAF" fill-rule="nonzero">
+                <polygon id="Path" points="4.99 7.67 1.695 3.85 2.645 3.035 4.99 5.755 7.33 3.035 8.28 3.85"></polygon>
+                <rect id="Rectangle" x="4.365" y="0" width="1.25" height="5.93"></rect>
+                <rect id="Rectangle" x="0.015" y="8.63" width="9.935" height="1.25"></rect>
+                <rect id="Rectangle" x="0" y="6.52" width="1.25" height="3.295"></rect>
+                <rect id="Rectangle" x="8.725" y="6.52" width="1.25" height="3.295"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

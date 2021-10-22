@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon / 카테고리01 Copy 9@3x</title>
+    <g id="상권정보" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icon-/-카테고리01-Copy-9">
+            <rect id="Rectangle-Copy-31" stroke="#969FAF" x="0.5" y="0.5" width="19" height="19" rx="4"></rect>
+            <g id="자산-50" transform="translate(5.000000, 5.000000)" fill="#969FAF" fill-rule="nonzero">
+                <rect id="Rectangle" x="0" y="0" width="9.935" height="1.25"></rect>
+                <polygon id="Path" points="8.24 9.9 1.695 9.9 1.695 0.935 2.945 0.935 2.945 8.65 6.99 8.65 6.99 0.935 8.24 0.935"></polygon>
+                <rect id="Rectangle" x="3.575" y="2.21" width="2.755" height="1.25"></rect>
+                <rect id="Rectangle" x="3.575" y="4.355" width="2.755" height="1.25"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
