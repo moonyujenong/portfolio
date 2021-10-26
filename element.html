@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크립트 용어 이해</title>
+</head>
+<body>
+    <h2>html  에 대해서 문서화 하거나 대화할 때 사용하는 용어에 대한 정리</h2>
+
+    <strong>Attribute </strong>
+
+    : HTML elements 에 추가적인 정보를 넣을 때 사용되는 요소.
+
+    ex) <div class="my-class"></div>
+
+    위의 예시에서 class 는 attribute (속성)이고, my-class 는 value (속성값)이 된다.
+
+    ex) <div class="my-class" data-id="true"></div>
+
+    data의 id 값을 얻거나 변경하고 싶은 경우,
+
+    $('.my-class').attr('data-id'); 
+
+    →  test  // 값 얻어옴.
+
+    $('.my-class').attr('data-id', 'false'); 
+
+    → data-id 값을 false 로 변경할 수 있음.
+
+    최신 jquery 버전일 경우 
+
+    $('.my-class').data('id'); 
+
+    방식을 사용해도 값은 같다.
+
+    <br><br>
+
+    <strong>Property</strong>
+
+    : HTML DOM tree 안에서 attribute 를 가르키는 요소이며 javascript property 를 다룬다.
+
+    ex)  <checkbox id="agree" type="checkbox" checked />
+
+    위의 예시에서 property .prop() 값은 “true“ 가 된다.
+
+    즉,  html 에 쓰여진 속성값 (src, style 등)이나 정보를 조회할 경우 attr() 함수를 사용하고, 그 외의 javascript 와 관련된 속성값 (활성화, 체크, 선택여부 등)을 조회할 경우엔 prop() 함수를 사용하면 된다.
+
+    ex) <a id="get_comment" href="#comments">코멘트</a>
+
+    위의 예시에서 href 가 가진 정보를 조회할 경우
+
+    attribute 값은 #comments 
+
+    property 값은 해당 페이지의 url 을 가지게 된다. (http://xpressengins.com ~~)
+
+    <br><br>
+
+    <strong>+ element 와 DOM (Document Object Model)</strong>
+
+    <h3>element (요소)</h3>
+
+    : <태그>내용</태그> , 태그를 포함해 태그로 감싼 내용 모두를 지칭함.
+
+    <br>
+
+    <h3>DOM (Document Object Model)</h3>
+
+    :  html, head, body 를 이용하여 만들어진 HTML 문서에 대한 인터페이스.
+
+
+
+    <strong>.data() .attr() 참고</strong>
+
+    url : https://gxnzi.tistory.com/55
+
+    <br>
+
+    .data() 를 통해 지정한 값은 실제로 해당 값으로 개체에 속성을 설정하지 않습니다. 데이터는 Jquery 데이터 구조 내에 저장되며, .data('key') 로 검색됩니다.때문에 실제 속성을 설정하려면 .attr(“key“, value) 로 설정하는 것을 권고합니다.
+
+</body>
+</html>

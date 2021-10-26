@@ -5,7 +5,7 @@ let generateSourceMaps = process.env.NODE_ENV !== 'production'
 
 if (process.env.SOURCEMAPS === 'true' || process.env.SOURCEMAPS === '1') {
   generateSourceMaps = true
-} 
+}
 
 // scss 사용 할 때
 const taskSass = function () {
