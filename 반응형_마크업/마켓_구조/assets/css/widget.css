@@ -1,0 +1,544 @@
+@charset "UTF-8";
+.xf-structure-section {
+  padding: 60px 0 80px;
+}
+
+.xf-structure-section .bottom-line {
+  position: relative;
+  display: inline-block;
+}
+
+.xf-structure-section .bottom-line::before {
+  position: absolute;
+  width: 100%;
+  height: 25px;
+  right: 0;
+  bottom: 6px;
+  left: 0;
+  background-color: #ffe900;
+  display: block;
+  content: '';
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.xf-structure-section .structure-content-wrap {
+  padding-top: 80px;
+}
+
+.xf-structure-section .structure-content-wrap .title-text {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: -0.96px;
+  color: #141414;
+  margin: 0 auto;
+}
+
+.xf-structure-section .structure-content-wrap .title-text .title-bold-text {
+  font-weight: 600;
+  position: relative;
+}
+
+.xf-structure-section .structure-content-wrap .middle-title-text {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.9px;
+  color: #484848;
+  text-align: center;
+  margin-top: 20px;
+  word-break: break-all;
+  opacity: 0.8;
+}
+
+.xf-structure-section .structure-content-wrap .middle-title-text .emphasis-box {
+  color: #141414;
+  font-weight: 500;
+}
+
+.xf-structure-section .structure-content-wrap .content-box {
+  margin-top: 80px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box.bottom-line-box {
+  padding-bottom: 60px;
+  border-bottom: 1px solid #ececec;
+}
+
+.xf-structure-section .structure-content-wrap .content-box:first-child {
+  margin-top: 0;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content {
+  margin-bottom: 30px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content:last-child {
+  margin-bottom: 0;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-explan-content {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-explan-content:last-child {
+  margin-bottom: 0;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .content-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.8px;
+  color: #141414;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .middle-title-text {
+  text-align: left;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .list-detail-explan-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  color: #141414;
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-left: 10px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .list-detail-explan-title.marketing-text {
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .marketing-surport-list-box {
+  padding: 0 10px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .marketing-surport-list-box .surport-list {
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .explan-sub-title {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  color: #141414;
+  margin-bottom: 23px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .explan-sub-title::before {
+  height: 15px;
+  bottom: -1px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-icon-wrap {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-icon-wrap .detail-icon {
+  width: 100%;
+  padding-top: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-icon-wrap .detail-icon.list-img1 {
+  background-image: url(../img/icon-list-1.svg);
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-icon-wrap .detail-icon.list-img2 {
+  background-image: url(../img/icon-list-2.svg);
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-icon-wrap .detail-icon.list-img3 {
+  background-image: url(../img/icon-list-3.svg);
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-list-box {
+  margin-top: 20px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-list-box li {
+  position: relative;
+  padding-left: 9px;
+  color: #767676;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: -0.58px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-list-box li::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  background-color: #767676;
+  position: absolute;
+  left: 0;
+  top: 12px;
+  border-radius: 90%;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .slide-img-wrap {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  -webkit-transform: translateX(-50vw);
+          transform: translateX(-50vw);
+}
+
+.xf-structure-section .structure-content-wrap .content-box .slide-img-wrap .slide-img-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 310px;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .slide-img-wrap .slide-img-container .slide-img-swiper {
+  height: 100%;
+}
+
+.xf-structure-section .structure-content-wrap .content-box .slide-img-wrap .slide-img-container .main-banner-img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.xf-structure-section .structure-content-wrap .tab-scroll-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.xf-structure-section .structure-content-wrap .tab-scroll-list .list-item {
+  width: 50%;
+  cursor: pointer;
+  height: auto;
+}
+
+.xf-structure-section .structure-content-wrap .tab-scroll-list .list-item .tab-link {
+  border: 1px solid #dcdede;
+  padding: 8px;
+  width: auto;
+  display: inline-block;
+  background-color: #fafafa;
+  color: #9c9c9c;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.6px;
+  opacity: 0.8;
+  display: block;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.xf-structure-section .structure-content-wrap .tab-scroll-list .list-item .tab-link br {
+  display: block;
+}
+
+.xf-structure-section .structure-content-wrap .tab-scroll-list .list-item.active .tab-link {
+  border: 1px solid #f8df08;
+  background-color: #fefbe6;
+  color: #484848;
+  opacity: 1;
+}
+
+.xf-structure-section .swiper-button-next.swiper-button-disabled, .xf-structure-section .swiper-button-prev.swiper-button-disabled {
+  opacity: 0.7;
+}
+
+.xf-structure-section .swiper-button-prev, .xf-structure-section .swiper-button-next {
+  width: 56px !important;
+  height: 56px !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  border-radius: 100px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  opacity: 0.7;
+}
+
+.xf-structure-section .swiper-button-prev i, .xf-structure-section .swiper-button-next i {
+  color: #000;
+}
+
+.xf-structure-section .swiper-button-prev:hover, .xf-structure-section .swiper-button-next:hover {
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  background-color: #f8df08 !important;
+}
+
+.xf-structure-section .swiper-button-prev:hover i, .xf-structure-section .swiper-button-next:hover i {
+  color: #2f2725;
+  opacity: 1;
+}
+
+.xf-structure-section .swiper-button-next:after, .xf-structure-section .swiper-container-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+.xf-structure-section .swiper-button-prev:after, .xf-structure-section .swiper-container-rtl .swiper-button-next:after {
+  display: none;
+}
+
+.xf-structure-section .arrow-btn {
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.xf-structure-section .banner-typo--pc {
+  padding: 0 15px;
+  color: #fff;
+}
+
+.xf-structure-section .banner-typo--pc .banner-title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.96px;
+  text-align: center;
+  margin: 0 0 20px;
+}
+
+.xf-structure-section .banner-typo--pc .typo-list .typo-item {
+  position: relative;
+  padding-left: 9px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: -0.58px;
+}
+
+.xf-structure-section .banner-typo--pc .typo-list .typo-item::before {
+  content: '·';
+  display: block;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
+
+.xf-structure-section .swiper-button-next {
+  right: 15px !important;
+}
+
+.xf-structure-section .swiper-button-prev {
+  left: 15px !important;
+}
+
+.xf-structure-section .swiper-navi-arrow {
+  display: none;
+}
+
+.xf-structure-section br {
+  display: none;
+}
+
+.xf-structure-section .title-text br, .xf-structure-section .br-middle-text br {
+  display: block;
+}
+
+.xf-structure-section .swiper-pagination {
+  bottom: 20px;
+  width: 100%;
+}
+
+.xf-structure-section .swiper-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #9c9c9c;
+  margin-right: 10px;
+}
+
+.xf-structure-section .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.xf-structure-section .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #f8df08;
+}
+
+@media screen and (min-width: 992px) {
+  .xf-structure-section {
+    padding: 100px 0;
+  }
+  .xf-structure-section br {
+    display: block;
+  }
+  .xf-structure-section .structure-content-wrap {
+    padding-top: 0;
+  }
+  .xf-structure-section .structure-content-wrap .title-text {
+    font-size: 38px;
+  }
+  .xf-structure-section .structure-content-wrap .title-text.title-text--service {
+    max-width: none;
+  }
+  .xf-structure-section .structure-content-wrap .middle-title-text {
+    max-width: 490px;
+    margin: 23px auto 0;
+    font-size: 20px;
+  }
+  .xf-structure-section .structure-content-wrap .middle-title-text.list-middle-title {
+    max-width: none;
+  }
+  .xf-structure-section .structure-content-wrap .content-box {
+    margin-top: 100px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box.bottom-line-box {
+    padding-bottom: 100px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content {
+    margin-bottom: 25px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .content-title {
+    font-size: 32px;
+    line-height: normal;
+    letter-spacing: -1.28px;
+    margin-top: 25px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .list-middle-title {
+    color: #767676;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .list-detail-explan-title {
+    padding-left: 40px;
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .list-detail-explan-title.marketing-text {
+    padding-left: 40px;
+    margin-top: 34px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .marketing-surport-list-box {
+    padding-left: 60px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .marketing-surport-list-box .surport-list {
+    font-size: 20px;
+    color: #141414;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-explan-content {
+    padding-left: 40px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-explan-content .detail-content-right-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 20px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .explan-sub-title {
+    font-size: 20px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-icon-wrap {
+    margin: inherit;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-list-box {
+    margin-top: 0;
+    padding-left: 40px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .list-box-content .detail-list-box li {
+    font-size: 17px;
+    line-height: 1.76;
+    letter-spacing: -0.7px;
+  }
+  .xf-structure-section .structure-content-wrap .content-box .slide-img-wrap .slide-img-container {
+    height: 530px;
+  }
+  .xf-structure-section .structure-content-wrap .tab-scroll-list {
+    width: 100%;
+  }
+  .xf-structure-section .structure-content-wrap .tab-scroll-list .list-item {
+    width: 25%;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    height: auto;
+  }
+  .xf-structure-section .structure-content-wrap .tab-scroll-list .list-item .tab-link {
+    padding: 11px 20px;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .xf-structure-section .structure-content-wrap .tab-scroll-list .list-item .tab-link br {
+    display: none;
+  }
+  .xf-structure-section .swiper-navi-arrow {
+    display: block;
+    max-width: 1170px;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    bottom: 280px;
+  }
+  .xf-structure-section .banner-typo--pc {
+    width: 100%;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+  .xf-structure-section .banner-typo--pc .banner-title {
+    text-align: left;
+    font-size: 38px;
+    margin-bottom: 25px;
+  }
+  .xf-structure-section .banner-typo--pc .typo-list .typo-item {
+    font-size: 17px;
+    line-height: 1.76;
+    letter-spacing: -0.7px;
+  }
+  .xf-structure-section .swiper-pagination {
+    bottom: 40px;
+  }
+  .xf-structure-section .swiper-pagination .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/*# sourceMappingURL=widget.css.map */
