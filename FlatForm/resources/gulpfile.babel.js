@@ -18,7 +18,7 @@ const taskSass = function () {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer())
     .pipe($.rename(function (filepath) {
-      filepath.dirname = Path.join(filepath.dirname, './css')
+      filepath.dirname = Path.join(filepath.dirname, '../../css')
     }))
     .pipe($.if(generateSourceMaps, $.sourcemaps.write('.')))
     .pipe(gulp.dest('.'))

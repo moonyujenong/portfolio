@@ -9,7 +9,7 @@ if (process.env.SOURCEMAPS === 'true' || process.env.SOURCEMAPS === '1') {
 
 // scss 사용 할 때
 const taskSass = function () {
-  return gulp.src(['./src/scss/**/*.scss'])
+  return gulp.src(['./**/scss/**/*.scss'])
     .pipe($.if(generateSourceMaps, $.sourcemaps.init()))
     .pipe($.plumber())
     .pipe($.sass({
@@ -18,7 +18,7 @@ const taskSass = function () {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer())
     .pipe($.rename(function (filepath) {
-      filepath.dirname = Path.join(filepath.dirname, './css')
+      filepath.dirname = Path.join(filepath.dirname, '../../css')
     }))
     .pipe($.if(generateSourceMaps, $.sourcemaps.write('.')))
     .pipe(gulp.dest('.'))
@@ -42,7 +42,8 @@ taskSass.displayName = 'sass'
 // taskPosthtml.displayName = 'posthtml'
 
 const taskWatch = function () {
-  gulp.watch(['./src/scss/**/*.scss'], gulp.series(taskSass))
+  gulp.watch(['./**/scss/**/*.scss'], gulp.series(taskSass))
+  // gulp.watch(['./src/assets/src/scss/**/*.scss'], gulp.series(taskSass))
   // gulp.watch(['Components/Themes/assets/src/js/*.js'], gulp.series(taskScript))
   // gulp.watch(['../markup/src/**/*.html'], gulp.series(taskPosthtml))
 }
@@ -54,7 +55,7 @@ gulp.task('watch', taskWatch)
 
 // gulp.task(taskScript)
 gulp.task(taskSass)
-
+ 
 // gulp.task(taskPosthtml)
 
 // gulp.task('lint', gulp.series(taskLintStyle))

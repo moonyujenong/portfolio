@@ -8,22 +8,22 @@
 @import 'pagination'; // 페이지네이션
 
 
-main {display: block;}
+main {display: block;} 
 
 body {
-    margin: 0;
+    margin: 0; 
 }
-
+ 
 html, body {
     position: relative;   
     height: 100%; 
-    -webkit-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%; 
     width: 100%;
-    font-family: 'Noto sans KR';
+    font-family: 'Noto sans KR';  
      
-}    
- 
-ul {
+}      
+  
+ul {  
     list-style: none;
     margin: 0;
     padding: 0;
@@ -524,6 +524,4 @@ select {
     color: #42526e;
     font-weight: 600;
 }
-
-
 
