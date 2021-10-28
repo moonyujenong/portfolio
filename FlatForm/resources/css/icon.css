@@ -46,6 +46,22 @@
   background-image: url(../img/icon-paging-arrow.svg);
 }
 
+.icon-img--kakao {
+  background-image: url(../img/icon-kakao.svg);
+}
+
+.icon-img--naver {
+  background-image: url(../img/icon-naver.svg);
+}
+
+.icon-img--google {
+  background-image: url(../img/icon-google.svg);
+}
+
+.icon-img--facebook {
+  background-image: url(../img/icon-facebook-new.svg);
+}
+
 .icon {
   background-repeat: no-repeat;
   background-position: center;
@@ -86,6 +102,12 @@
   width: 26px;
   height: 26px;
   background-size: 26px;
+}
+
+.icon-size-45 {
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
 }
 
 /*# sourceMappingURL=icon.css.map */

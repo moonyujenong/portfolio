@@ -5,7 +5,7 @@ let generateSourceMaps = process.env.NODE_ENV !== 'production'
 
 if (process.env.SOURCEMAPS === 'true' || process.env.SOURCEMAPS === '1') {
   generateSourceMaps = true
-} 
+}
 
 // scss 사용 할 때
 const taskSass = function () {
@@ -18,7 +18,7 @@ const taskSass = function () {
     }).on('error', $.sass.logError))
     .pipe($.autoprefixer())
     .pipe($.rename(function (filepath) {
-      filepath.dirname = Path.join(filepath.dirname, '../../css')
+      filepath.dirname = Path.join(filepath.dirname, './css')
     }))
     .pipe($.if(generateSourceMaps, $.sourcemaps.write('.')))
     .pipe(gulp.dest('.'))

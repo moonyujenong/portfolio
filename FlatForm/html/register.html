@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <meta name="mobile-web-app-capable" content="yes">  
+        <title>경남비즈니스플랫폼 - 회원가입</title>
+
+        <!-- js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        <!-- <script src="../resources/library/jquery-3.6.0.min.js"></script>  -->
+
+        <!-- css-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" integrity="sha384-OX60W5no62t3a7IWb/778scS02RmUVFiMWgxiaEMwIlqYjLONUVz9xqTGVWlyiFH" crossorigin="anonymous"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="../resources/css/component.css" > <!-- 컴포넌트 --> 
+
+    </head> 
+
+    <body>
+        <main>
+            <section class="user-approve-content-section">
+                <div class="content-wrap">
+                    <div class="register-page-top-banner">
+                        <div class="register-banner-inner-wrap">
+                            <h3 class="content-title">회원가입</h3>
+
+                            <div class="register-process-list-box">
+                                <ul class="process-list flex-item--row">
+
+                                    <!-- todo : 회원가입 스텝 박스 / 활성화 시 li 에 클래스 active 추가합니다. -->
+                                    <li class="process-item active">
+                                        <div class="process-inner-box flex-item--column">
+                                            <span class="process-step">STEP 1</span>
+                                            <span class="process-step-text">회원유형 <br> 선택</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="process-item">
+                                        <div class="process-inner-box flex-item--column">
+                                            <span class="process-step">STEP 2</span>
+                                            <span class="process-step-text">회원정보 입력 <br> 약관 동의</span>
+                                        </div>
+                                    </li>
+
+                                    <li class="process-item">
+                                        <div class="process-inner-box flex-item--column">
+                                            <span class="process-step">STEP 3</span>
+                                            <span class="process-step-text">회원가입 <br> 완료</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    <div class="container-content">
+
+                        <div class="user-info-wrap">
+
+                            <!-- todo : STEP 1 섹션 -->
+                            <div class="select-register-type-box" style="display: none;">
+                                <ul class="select-register-type flex-item--row">
+                                    <li class="select-register-item">
+                                        <a href="#" class="select-item-link flex-item--column">
+                                            <div class="icon select-item-img flex-column-item">
+                                                <!-- <img src="../resources/img/icon-personal.svg" alt="일반회원 가입 이미지" class="item-img"> -->
+                                                <span class="item-img" style="-webkit-mask-image:url(../resources/img/icon-personal.svg); "></span>
+                                            </div>
+                                            <span class="flex-column-item select-item-text">일반회원 가입</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="select-register-item">
+                                        <a href="#" class="select-item-link flex-item--column">
+                                            <div class="icon select-item-img flex-column-item">
+                                                <!-- <img src="../resources/img/icon-company.svg" alt="기업회원 가입 이미지" class="item-img"> -->
+                                                <span class="item-img" style="-webkit-mask-image:url(../resources/img/icon-company.svg); height: 71px;" ></span>
+                                            </div>
+                                            <span class="flex-column-item select-item-text">기업회원 가입</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- //  STEP 1 섹션 -->
+
+
+                            <!-- todo : STEP 2 섹션 -->
+                            <div class="register-user-info-content-box" style="display: block;">
+
+                                <!-- 기본정보 -->
+                                <div class="info-content-box">
+                                    <div class="info-content-title">
+                                        <h3 class="title-item flex-item--row">
+                                            
+                                            <span class="flex-item">기본정보</span>
+                                            <span class="flex-item required-text">필수입력</span>
+                                            
+                                        </h3>
+                                    </div>
+
+                                    <div class="info-content-list-box">
+                                        <!-- todo : 일반회원 입력란 -->
+                                        <ul class="info-content-list list-personal " style="display:block;">
+                                            <li class="info-content-item">
+                                                <form action="">
+                                                    <div class="content-inner-line flex-item--row " >
+                                                        <span class="flex-item content-item-title">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="required">인증</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right flex-item--row " style="justify-content: flex-end;">
+                                                            <div class="form-group form-group--custom ">
+                                                                <div class="item-input">
+                                                                    
+                                                                    <input type="text" class="form-control info-input-custom " id="" placeholder="" style="width: 370px;" aria-label="self-certification">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="certification-btn  flex-item--row" aria-label="certification-btn">
+                                                                <span class="flex-item">본인인증</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">이름</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="이름 입력" aria-label="user-name">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">아이디</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="아이디 입력" aria-label="user-id">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">비밀번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="password" class="form-control info-input-custom" id="" placeholder="비밀번호 입력" aria-label="user-password">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">비밀번호 확인</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="password" class="form-control info-input-custom" id="" placeholder="비밀번호 재확인" aria-label="user-password-check">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">회사명</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="user-company-name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">부서명</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="user-company-detail-name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">이메일</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="XXX@naver.com" aria-label="user-email">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">연락처</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="number" class="form-control info-input-custom" id="" placeholder="전화번호 입력" aria-label="user-number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">핸드폰번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="number" class="form-control info-input-custom" id="" placeholder="핸드폰번호 입력" aria-label="user-call-number">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- // 일반회원 입력란 -->
+
+
+                                        <!-- todo : 기업회원 입력란 -->
+                                        <ul class="info-content-list list-company">
+                                            <li class="info-content-item">
+                                                <form action="">
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="required">사업자조회</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right flex-item--row" style="justify-content: flex-end;">
+                                                            <div class="form-group form-group--custom ">
+                                                                <div class="item-input">
+                                                                    
+                                                                    <input type="text" class="form-control info-input-custom " id="" placeholder="사업자 조회" style="width: 370px;" aria-label="company-lookup">
+                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <button type="button" class="certification-btn certification-btn--lookup  flex-item--row" aria-label="lookup-btn">
+                                                                <span class="flex-item">검색</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">사업자번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="사업자번호 입력" aria-label="company-number">
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">법인번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="법인번호 입력" aria-label="company-corporation">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">회사명</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="company-name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">홈페이지</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="company-page">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">연락처</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="number" class="form-control info-input-custom" id="" placeholder="사업자번호 조회" aria-label="company-call">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">팩스번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="company-fex">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">대표자명</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="대표자명 입력" aria-label="company-ceo-name">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">대표자 이메일</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="XXX@naver.com" aria-label="ceo-email">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                  
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">대표자 전화번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="number" class="form-control info-input-custom" id="" placeholder="대표 전화번호 입력" aria-label="representative-call">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">핸드폰번호</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="number" class="form-control info-input-custom" id="" placeholder="핸드폰번호 입력" aria-label="phone-call">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">회사 설립일</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="company-establish">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">대표 홈페이지</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="representative-site">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="required">대표업종</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="대표업종 입력" aria-label="representative-category">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+                                            <li class="info-content-item">
+                                                <div class="content-inner-line flex-item--row">
+                                                    <span class="flex-item content-item-title">
+                                                        <span class="content-item-title-box">
+                                                            <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                            <span class="">부업종</span>
+                                                        </span>
+                                                    </span>
+                                                    
+                                                    <div class="content-item-right">
+                                                        <div class="form-group form-group--custom ">
+                                                            <div class="item-input">
+                                                                <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="category">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <!-- // 기업회원 입력란 -->
+                                    </div>
+                                </div>
+                                <!-- //기본정보 -->
+
+
+                                <!-- 기타정보 -->
+                                <div class="info-content-box">
+                                    <div class="info-content-title">
+                                        <h3 class="title-item flex-item--row">
+                                            <span class="flex-item">기타정보</span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="info-content-list-box">
+                                        <form action="">
+                                            <ul class="info-content-list">
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title content-item-title--etc">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="">수신동의</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">동의</span>
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+
+                                                            <label for="agree_check2" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">동의</span>
+                                                                <input type="radio" name="agree_check" id="agree_check2" aria-label="agree_check2" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title content-item-title--etc">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="">일자리수신동의</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">동의</span>
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+
+                                                            <label for="agree_check2" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">동의</span>
+                                                                <input type="radio" name="agree_check" id="agree_check2" aria-label="agree_check2" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title content-item-title--etc">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="">알람서비스</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">신청안함</span>
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+
+                                                            <label for="agree_check2" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">SNS</span>
+                                                                <input type="radio" name="agree_check" id="agree_check2" aria-label="agree_check2" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+
+                                                            <label for="agree_check2" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <span class="check-text">E-mail</span>
+                                                                <input type="radio" name="agree_check" id="agree_check2" aria-label="agree_check2" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-left: 60px;"></div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- // 기타정보 -->
+
+                                <!-- 주요 제품정보 : 기업회원일 경우에만 노출 -->
+                                <div class="info-content-box">
+                                    <div class="info-content-title">
+                                        <h3 class="title-item flex-item--row">
+                                            <span class="flex-item">주요 제품정보</span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="info-content-list-box">
+                                        <form action="">
+                                            <ul class="info-content-list">
+                                                <li class="info-content-item info-content-item--product-info">
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title content-item-title--etc">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="">제품명</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right">
+                                                            <div class="form-group form-group--custom ">
+                                                                <div class="item-input">
+                                                                    <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="representative-site">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--product-info" >
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title content-item-title--etc  ">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="">제품요약</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right">
+                                                            <div class="form-group form-group--custom ">
+                                                                <div class="item-input">
+                                                                    <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="representative-site">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--product-info" >
+                                                    <div class="content-inner-line flex-item--row">
+                                                        <span class="flex-item content-item-title content-item-title--etc  ">
+                                                            <span class="content-item-title-box">
+                                                                <!-- todo : 필수 항목일 시, 클래스 required 추가 -->
+                                                                <span class="">제품요약</span>
+                                                            </span>
+                                                        </span>
+                                                        
+                                                        <div class="content-item-right">
+                                                            <div class="form-group form-group--custom ">
+                                                                <div class="item-input">
+                                                                    <!-- todo : 에디터 영역 -->
+                                                                    <!-- <input type="text" class="form-control info-input-custom" id="" placeholder="" aria-label="representative-site"> -->
+                                                                    <textarea name="" id="" cols="" rows="" class="form-textarea"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                
+                                            </ul>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- //주요 제품정보 : 기업회원일 경우에만 노출 -->
+
+                                <!-- 약관동의 -->
+                                <div class="info-content-box">
+                                    <div class="info-content-title">
+                                        <h3 class="title-item flex-item--row">
+                                            <span class="flex-item">약관동의</span>
+                                        </h3>
+                                    </div>
+
+                                    <div class="info-content-list-box">
+                                        <form action="">
+                                            <ul class="info-content-list">
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                       
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-right: 30px;"></div>
+                                                                <span class="check-text--term">전체 약관 동의하기</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                       
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-right: 30px;"></div>
+                                                                <span class="check-text--term">이용약관 동의하기</span>
+                                                            </label>
+
+                                                            <button class="term-show-btn" type="button" aria-label="term-show-btn">약관보기</button>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                       
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-right: 30px;"></div>
+                                                                <span class="check-text--term">개인정보 처리방침</span>
+                                                            </label>
+                                                            
+                                                            <button class="term-show-btn" type="button" aria-label="term-show-btn">약관보기</button>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="info-content-item info-content-item--etc">
+                                                    <div class="content-inner-line flex-item--row">
+                                                       
+                                                        
+                                                        <div class="content-item-right flex-item--row">
+                                                            <label for="agree_check" class="flex-item--row xu-label-checkradio" style="margin-right: 33px;">
+                                                                <input type="radio" name="agree_check" id="agree_check" aria-label="agree_check" class="check-etc-info">
+                                                                <div class="check-etc-info-btn" style="margin-right: 30px;"></div>
+                                                                <span class="check-text--term">개인정보 수집 및 이용동의</span>
+                                                            </label>
+                                                            
+                                                            <button class="term-show-btn" type="button" aria-label="term-show-btn">약관보기</button>
+                                                        </div>
+
+                                                    </div>
+                                                </li>
+                                            
+                                            </ul>
+
+                                            <button type="submit" class="user-info-submit-btn flex-item--row">
+                                                <span class="flex-item">완료</span>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- // 약관동의 -->
+                            </div>
+                            <!-- // STEP 2 섹션 -->
+
+
+                            <!-- STEP 3 섹션 -->    
+                            <div class="register-completion-wrap">
+                                <div class="register-completion-box flex-item--row">
+                                    <div class="flex-item completion-img-box">
+                                        <div class="icon">
+                                            <img src="../resources/img/register-img.png" alt="회원가입 완료 이미지" class="completion-img">
+                                        </div>
+                                    </div>
+                                    <div class="flex-item register-completion-right" >
+                                        <!-- todo : 가입한 유저의 이름이 들어가게 됩니다. -->
+                                        <div class="register-user-name-box">
+                                            [
+                                            <span class="register-user-name">홍길동</span>
+                                            ] 
+                                            님
+                                        </div>
+
+                                        <span class="regigster-complete-text">
+                                            회원가입 완료 <br>
+                                            가입해 주셔서 감사합니다.
+                                        </span>
+                                    </div>
+
+                                </div>
+
+                                <!-- todo : 회원가입 완료 버튼 / 클릭 시  -->
+                                <button type="submit" class="user-info-submit-btn user-info-submit-btn-complete flex-item--row">
+                                    <span class="flex-item">완료</span>
+                                </button>
+                            </div>
+                            <!-- // STEP 3 섹션 -->
+
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            
+        </main>
+    </body>
+</html>

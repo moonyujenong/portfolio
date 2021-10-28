@@ -6,29 +6,31 @@
 @import 'xe.ui'; // ui
 @import 'icon'; // icon
 @import 'pagination'; // 페이지네이션
+@import 'auth'; // 로그인&회원가입
 
 
-main {display: block;} 
+main {display: block;}
 
 body {
-    margin: 0; 
+    margin: 0;
 }
- 
+
 html, body {
-    position: relative;   
-    height: 100%; 
-    -webkit-text-size-adjust: 100%; 
+    position: relative;
+    height: 100%;
+    -webkit-text-size-adjust: 100%;
     width: 100%;
-    font-family: 'Noto sans KR';  
-     
-}      
-  
-ul {  
+    font-family: 'Noto sans KR';
+    overflow-x: hidden;
+    
+}
+
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-   
+
 a {
     text-decoration: none;
     background-color: transparent;
@@ -43,7 +45,7 @@ input[type="text"] {
     appearance: none;
     // border: 1px solid #ececec;
     background-color: #fff;
-    border-color: #ececec;
+    border-color: #d7d7d7;
 
     &:focus {
         
@@ -516,7 +518,7 @@ select {
     margin-top: 19px;
     margin-bottom: 19px;
 }
- 
+
 .title-16-b {
     font-size: 16px;
     line-height: 1.38;
@@ -525,3 +527,37 @@ select {
     font-weight: 600;
 }
 
+
+
+/* 로딩 */
+.fix-loading-bg {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+
+    .icon {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        right: 0;
+        bottom: 0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .xi-spin--custom {
+            font-size: 50px;
+            color: #fff;
+        }
+    }
+}
+
+.container-content {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
