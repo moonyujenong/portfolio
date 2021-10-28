@@ -1,0 +1,93 @@
+.xf-widget-load-intro-section {
+  position: relative;
+  width: 100%;
+}
+
+.xf-widget-load-intro-section .load-intro-title-box {
+  text-align: center;
+}
+
+.xf-widget-load-intro-section .load-intro-title-box .load-intro-title {
+  font-size: 27px;
+  font-weight: 500;
+  line-height: 1.9;
+  letter-spacing: -0.16px;
+  color: #141414;
+  margin: 0;
+}
+
+.xf-widget-load-intro-section .load-intro-title-box .load-intro-middle-title {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -0.08px;
+  color: #484848;
+  opacity: 0.8;
+}
+
+.xf-widget-load-intro-section .load-intro-title-box .load-intro-middle-title .middle-title-enter {
+  width: 100%;
+  height: 14px;
+  display: block;
+}
+
+.xf-widget-load-intro-section .load-map-wrap {
+  margin-top: 40px;
+  width: 100%;
+  height: 514px;
+}
+
+.xf-widget-load-intro-section .load-map-wrap .load-map-content {
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.xf-widget-load-intro-section .load-map-wrap .load-map-content .root_daum_roughmap {
+  width: 100%;
+}
+
+.xf-widget-load-intro-section .load-map-wrap .load-map-content .hide {
+  display: none !important;
+}
+
+.xf-widget-load-intro-section .load-intro-wrap {
+  padding: 120px 0 80px;
+}
+
+@media screen and (min-width: 992px) {
+  .xf-widget-load-intro-section .load-intro-title-box {
+    max-width: 624px;
+    margin: 0 auto;
+  }
+  .xf-widget-load-intro-section .load-intro-title-box .load-intro-title {
+    font-size: 38px;
+    word-break: break-all;
+    letter-spacing: -1px;
+  }
+  .xf-widget-load-intro-section .load-intro-title-box .load-intro-middle-title {
+    margin-top: 25px;
+    font-size: 20px;
+  }
+  .xf-widget-load-intro-section .load-intro-title-box .load-intro-middle-title .middle-title-enter {
+    height: 16px;
+  }
+  .xf-widget-load-intro-section .load-intro-wrap {
+    padding: 100px 0;
+  }
+  .xf-widget-load-intro-section .load-map-wrap {
+    margin-top: 70px;
+    width: 100%;
+    height: 514px;
+  }
+  .xf-widget-load-intro-section .load-map-wrap .load-map-content {
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;
+  }
+}
+
+/*# sourceMappingURL=widget.css.map */
