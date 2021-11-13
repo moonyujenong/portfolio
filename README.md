@@ -1,2 +1,4 @@
 # profolio
-url : https://moonyujenong.github.io/myjportfolio/
+url : 
+
+/*https://moonyujenong.github.io/myjportfolio/*/
