@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"> -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <meta name="mobile-web-app-capable" content="yes">  
+        <title>경남비즈니스플랫폼 - 커뮤니티</title>
+
+        <!-- js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        
+        <!-- <script src="../resources/library/jquery-3.6.0.min.js"></script>  -->
+
+        <!-- swiper js -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+
+        <!-- css-->
+        <link rel="stylesheet" href="../resources/gnepa/css/all.css" > <!-- GNEPA측 CSS - 수정할 수 없음 -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" integrity="sha384-OX60W5no62t3a7IWb/778scS02RmUVFiMWgxiaEMwIlqYjLONUVz9xqTGVWlyiFH" crossorigin="anonymous"><link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+        <link rel="stylesheet" href="./assets/css/board.css" > 
+        <link rel="stylesheet" href="../../assets/css/component.css" > <!-- 컴포넌트 --> 
+
+        <!-- swiper css -->
+        <link  rel="stylesheet"  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+
+    </head>  
+
+    <body>
+        <!-- todo : 헤더 공통 -->
+
+        <main role="main">
+            <div class="container-content">
+                <nav class="head-navigation-area" aria-labelledby="community-head-nav">
+                    <div class="community-head-nav">
+                        <ul class="navi-list">
+                            <li class="navi-item">
+                                <a href="#" class="navi-link home" title="홈" style="height: 24px;">
+                                    <div class="icon">
+                                        <span class="icon-img icon-img--home icon-size-24" ></span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li class="navi-item">
+                                <a href="#" class="navi-link one-depth" title="커뮤니티">
+                                    <span class="menu-item">커뮤니티</span>
+                                </a>
+                            </li>
+
+                            <li class="navi-item">
+                                <a href="#" class="navi-link two-depth" title="공지사항">
+                                    <span class="menu-item">공지사항</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="" style="display: flex;">
+                
+                    <aside class="community-nav-menu-area " style="display: inline-block; vertical-align: top;">
+                        
+                        <div class="nav-menu-wrap">
+                            <div class="nav-menu-title" >
+                                <div class="title-box-inner-img" style="background-image: url(../../resources/img/img-title-bg.png);"></div>
+                                <span class="nav-menu-title-item">커뮤니티</span>
+                            </div>
+
+                            <div class="sub-menu-list-wrap">
+                                <ul class="sub-nav-menu-list">
+                                    <li class="sub-nav-menu-item">
+                                        <!-- todo : 현재 페이지 메뉴 태그에 클래스 select 추가 -->
+                                        <a href="#" class="sub-nav-menu-link  select">
+                                            <span class="sub-nav-menu-text">공지사항</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sub-nav-menu-item">
+                                        <a href="#" class="sub-nav-menu-link">
+                                            <span class="sub-nav-menu-text">뉴스정보</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="sub-nav-menu-item">
+                                        <a href="#" class="sub-nav-menu-link">
+                                            <span class="sub-nav-menu-text">자주 묻는 질문</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </aside><!-- 
+
+
+                    --><section class="community-sort-list-area " style="display: inline-block; vertical-align: top;">
+                        <div class="sort-list-inner">
+                            <div class="sort-list-title-box">
+                                <!-- todo : 게시판 타이틀 -->
+                                <h2 class="list-title">
+                                    <span class="list-title-item">갤러리</span>
+                                </h2>
+                            </div>
+
+                            <div class="list-search-tab-wrap">
+                                <!-- todo : 게시판 리스트 내 검색 영역 / 필요 ㄴ시 노출-->
+                                <form action="">
+                                    <div class="flex-item--row">
+                                        <div class="search-tab-inner flex-item--row">
+                                            <div class="icon">
+                                                <span class="icon-img icon-img--search-gray icon-size-24"></span>
+                                            </div>
+                                            <input type="text" class="search-word-input" aria-label="search-word-input" placeholder="검색어를 입력하세요">
+                                        </div>
+                                        <button class="search-export-btn" type="submit" aria-label="list-search-btn">검색</button>
+                                    </div>
+                                </form>
+                            </div>
+
+
+                            <!-- todo : 게시판 리스트 정렬 영역 -->
+                            <div class="board-list-wrap">
+                                
+                                <div class="board-gallery-list-inner " style="padding-top: 15px;">
+                                    <ul class="gallery-list-box">
+                                        <li class="gallery-list-item">
+                                            <a href="#" class="gallery-list-item-link" title="">
+                                                <div class="gallery-img-box">
+                                                    <div class="gallery-img-item" style="background-image: url(../../resources/img/gallery_sample/sample2.png);"></div>
+                                                </div>
+
+                                                <div class="gallery-board-info">
+                                                    <span class="gallery-item-title">사람을 먼저 생각하는 인권경영 실천의지 실천의지</span>
+
+                                                    <span class="gallery-item-sub-title">경상남도 경제진흥원 인권경영 선언</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="gallery-list-item">
+                                            <a href="#" class="gallery-list-item-link" title="">
+                                                <div class="gallery-img-box">
+                                                    <div class="gallery-img-item" style="background-image: url(../../resources/img/gallery_sample/sample3.png);"></div>
+                                                </div>
+
+                                                <div class="gallery-board-info">
+                                                    <span class="gallery-item-title">사람을 먼저 생각하는 인권경영 실천의지 실천의지</span>
+
+                                                    <span class="gallery-item-sub-title">경상남도 경제진흥원 인권경영 선언</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="gallery-list-item">
+                                            <a href="#" class="gallery-list-item-link" title="">
+                                                <div class="gallery-img-box">
+                                                    <div class="gallery-img-item" style="background-image: url(../../resources/img/gallery_sample/sample4.png);"></div>
+                                                </div>
+
+                                                <div class="gallery-board-info">
+                                                    <span class="gallery-item-title">사람을 먼저 생각하는 인권경영 실천의지 실천의지</span>
+
+                                                    <span class="gallery-item-sub-title">경상남도 경제진흥원 인권경영 선언</span>
+                                                </div>
+                                            </a>
+                                        </li>
+
+                                        <li class="gallery-list-item">
+                                            <a href="#" class="gallery-list-item-link" title="">
+                                                <div class="gallery-img-box">
+                                                    <div class="gallery-img-item" style="background-image: url(../../resources/img/gallery_sample/sample5.png);"></div>
+                                                </div>
+
+                                                <div class="gallery-board-info">
+                                                    <span class="gallery-item-title">사람을 먼저 생각하는 인권경영 실천의지 실천의지</span>
+
+                                                    <span class="gallery-item-sub-title">경상남도 경제진흥원 인권경영 선언</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                
+                                <div class="board-bottom-user-area">
+                                    <!-- todo : 페이지네이션 / 상권정보 내의 페이지네이션과 동일 -->
+                                    <div class="board-list-pagination">
+                                        페이지네이션 영역
+                                    </div>
+
+
+                                    <!-- todo : 자주 묻는 질문 게시판에서 노출 -->
+                                    <div class="user-write-btn-box">
+                                        <a href="#" title="내가 쓴 글" class="user-btn-link user-write-show">
+                                            <span class="inner-text">내가 쓴 글</span>
+                                        </a>
+
+                                        <a href="#" title="글쓰기" class=" user-btn-link user-write-show">
+                                            <span class="inner-text">글쓰기</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!-- todo : 사진 클릭 시 사진 팝업을 띄웁니다. -->
+                        <div class="popup-img-list-wrap" style="display: none;">
+                            <div class="popup-img-list-inner">
+                                <div class="swiper popup-img-list">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="gallery-slide-item">
+                                                <img src="../../resources/img/gallery_sample/smaple1.png" alt="">
+                                            </div>
+                                            
+                                        </div>
+                                       
+                                        <div class="swiper-slide">
+                                            <div class="gallery-slide-item">
+                                                <img src="../../resources/img/gallery_sample/smaple1.png" alt="">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-button-prev"></div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <script>
+            $(function(){
+                var swiper = new Swiper(".popup-img-list", {
+                    slidesPerView: "auto",
+                    navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                    },
+                });
+            })
+        </script>
+    </body>
+</html>
