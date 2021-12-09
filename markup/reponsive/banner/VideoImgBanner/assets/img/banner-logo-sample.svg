@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="80" viewBox="0 0 80 80">
+    <defs>
+        <filter id="3yeh64c1zb">
+            <feColorMatrix in="SourceGraphic" values="0 0 0 0 0.085130 0 0 0 0 0.809083 0 0 0 0 0.822011 0 0 0 1.000000 0"/>
+        </filter>
+        <rect id="x9be10unpa" width="80" height="80" x="0" y="0" rx="23"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-920.000000, -376.000000) translate(690.000000, 376.000000) translate(230.000000, 0.000000)">
+                    <mask id="fbaa5gvprc" fill="#fff">
+                        <use xlink:href="#x9be10unpa"/>
+                    </mask>
+                    <use fill="#FFF" xlink:href="#x9be10unpa"/>
+                    <g filter="url(#3yeh64c1zb)">
+                        <g mask="url(#fbaa5gvprc)">
+                            <g>
+                                <path fill="#000" fill-rule="nonzero" d="M0 13.636h3.41v11.25H0v-11.25zm6.733 18.069h3.409V6.818H6.733v24.887zm6.648 6.818h3.409V0h-3.41v38.523zm6.647-13.637h3.41v-11.25h-3.41v11.25zm6.733 9.375h3.41v-30h-3.41v30zm13.466-20.625V25.74h3.41V13.636h-3.41zm-6.733 24.887h3.41V0h-3.41v38.523z" transform="translate(18.181818, 20.909091)"/>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

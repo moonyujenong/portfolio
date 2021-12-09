@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지&동영상 배너</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css" integrity="sha384-OX60W5no62t3a7IWb/778scS02RmUVFiMWgxiaEMwIlqYjLONUVz9xqTGVWlyiFH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/html.css">
+
+    <!-- 스크립트 -->
+    <script src="../../../../assets/js/jquery.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- 탑배너 -->
+    <section class="xf-widget-wide-slide-banner">  
+        
+        <!-- pc -->
+        <div class="swiper wide-slide-banner-content ">
+            <div class="swiper-wrapper banner-item-wrap">
+                
+                <div class="swiper-slide slide-content-wrap">
+                    
+                
+                        <!-- <div class="banner-video"> -->
+                            <video class="banner-video" width="atuo" height="100%" autoplay="autoplay" muted="muted" loop  controls>
+                                <source type="video/mp4"  src="./assets/img/sample_video.mp4">
+                            </video>
+                            <!-- https://prj-beats.xehub.co.kr/storage/app/public/media/public/media_library/f5/53/20210802173345dff0d9e5f3b8ac6ee5cae7d3723ac550d255566a.mp4?autoplay=1&mute=1 -->
+                        <!-- </div> -->
+
+                        <div class="banner-text-box text-center">
+                            <div class="logo-img"></div>
+                            <div><h2 class="banner-text">내 음악을 안전하게 거래하는 유일한 방법</h2></div>
+                            <div class="banner-btn"><a href="#" class="btn-link">무료로 시작하기</a></div>
+                        </div>
+                    
+    
+                </div>
+
+                <div class="swiper-slide slide-content-wrap">
+                    <div class="full-screen-content" style="background-image:url(./assets/img/sample-img.png);"></div>
+                    
+                    <div class="banner-text-box text-center">
+                        <div class="logo-img"></div>
+                        <div><h2 class="banner-text">내 음악을 안전하게 거래하는 유일한 방법</h2></div>
+                        <div class="banner-btn"><a href="#" class="btn-link">무료로 시작하기</a></div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- //pc -->
+    </section>
+    <!-- //탑 배너 -->
+
+    
+
+    <!-- 슬라이드 스크립트 -->
+    <script>
+        $(function(){
+            var swiper = new Swiper(".wide-slide-banner-content", {});
+
+
+        /*  var swiper = new Swiper(".wide-slide-pc", {
+                breakpoints : {
+                    992 : {
+                        resistanceRatio:0,
+                    }
+                }
+            }); */
+
+
+        });
+    </script>
+</body>
+</html>
+
+
+
+

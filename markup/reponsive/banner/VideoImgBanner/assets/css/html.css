@@ -1,0 +1,192 @@
+.xf-widget-wide-slide-banner {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  margin-left: -50vw;
+  display: block;
+  top: 0;
+}
+
+.xf-widget-wide-slide-banner .slide-content-wrap {
+  height: 430px;
+  max-height: 430px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.xf-widget-wide-slide-banner .banner-text-box {
+  width: 100%;
+  bottom: 0;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 90px;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.xf-widget-wide-slide-banner .logo-img {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  background-image: url(../img/banner-logo-sample.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 20px;
+}
+
+.xf-widget-wide-slide-banner .banner-text {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  line-height: 1.38;
+  display: block;
+  margin: 12px 0 16px;
+}
+
+.xf-widget-wide-slide-banner .banner-btn {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  padding: 0 15px;
+}
+
+.xf-widget-wide-slide-banner .banner-btn .btn-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.8px;
+  line-height: normal;
+  color: #fff;
+  border-radius: 50px;
+  background-color: #16ced2;
+  max-width: 266px;
+  margin: 0 auto;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+}
+
+.xf-widget-wide-slide-banner .banner-btn .btn-link:hover {
+  background-color: #01a9ac;
+  -webkit-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+}
+
+.xf-widget-wide-slide-banner .full-screen-content {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/top-banner.png);
+  height: 430px;
+}
+
+.xf-widget-wide-slide-banner .wide-banner-item {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.xf-widget-wide-slide-banner .wide-slide-mobile {
+  display: block;
+}
+
+.xf-widget-wide-slide-banner .wide-slide-pc {
+  display: none;
+}
+
+.xf-widget-wide-slide-banner .banner-video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .xf-widget-wide-slide-banner .banner-text-box {
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    padding-bottom: 148px;
+    /*  top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+  }
+  .xf-widget-wide-slide-banner .banner-text-box .banner-text {
+    font-size: 56px;
+    line-height: 1.11;
+    letter-spacing: -3.1px;
+    margin-bottom: 33px;
+    margin-top: 16px;
+  }
+  .xf-widget-wide-slide-banner .banner-text-box .logo-img {
+    width: 80px;
+    height: 80px;
+  }
+  .xf-widget-wide-slide-banner .banner-text-box .banner-btn {
+    bottom: 83px;
+    max-width: 370px;
+  }
+  .xf-widget-wide-slide-banner .banner-text-box .banner-btn .btn-link {
+    font-size: 20px;
+    padding: 16px 15px;
+    letter-spacing: -1px;
+    max-width: 370px;
+  }
+  .xf-widget-wide-slide-banner .slide-content-wrap {
+    height: 600px;
+    max-height: 600px;
+  }
+  .xf-widget-wide-slide-banner .wide-slide-mobile {
+    display: none;
+  }
+  .xf-widget-wide-slide-banner .wide-slide-pc {
+    display: block;
+  }
+  .xf-widget-wide-slide-banner .full-screen-content {
+    height: 600px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
+  }
+  .xf-widget-wide-slide-banner .banner-video {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+/*# sourceMappingURL=html.css.map */
