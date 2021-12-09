@@ -69,11 +69,60 @@
 
     :  html, head, body 를 이용하여 만들어진 HTML 문서에 대한 인터페이스.
 
+    <h3>html 태그 용어</h3>
+    <ul>
+        <li>div : divide,  영역을 구분하는 역할로 기본적으로 블록 (block) 형태. </li>
+        <li>span : 자신의 영역만 가지고 있으며 인라인 (inline) 형태로 최대 width를 가지고 기본 margin 값이 없음.
+            <br>-> width, height 등 스타일을 적용하고 싶다면 display : block ; 적용시켜줘야 함.
+        </li>
+        <li>p : paragraph, 텍스트 혹은 이미지를 선언할 수 있으며 기본 margin 값 상, 하 16px 을 가지고 있음.</li>
+        <li>img : image, 이미지 첨부 시 사용하며, 기본적으로 display : inline-block 성격을 가지고 있음. 
+            <br>
+            -> src : source , 웹, 로컬 경로에 있는 이미지 파일의 주소 선언. <br>
+            -> alt : 이미지가 렌더링 되지 않았을 때 대신해 나타날 문자열 선언. <br>
+            -> width : img 의 임의 가로 길이 지정 가능. <br>
+            -> height : img 의 임의 세로 길이 지정 가능. <br>
+            -> loading : 이미지를 불러오는 방식을 설정할 수 있음. (ex : loading=”lazy”) / 사파리 지원 X <br>
+            &nbsp; &nbsp; → lazy : 이미지가 뷰포트의 일정 거리 안으로 들어와야 불러옴. 불필요한 이미지 로딩을 줄여 페이지의 속도를 증가시킬 수 있음. (단, 연속된 사진일 경우 한개씩 불러옴.) <br>
+            &nbsp; &nbsp; → eager : 기본. 이미지를 즉시 로드.
+
+        </li>
+        <li>ul : unordered list, 순서 없이 도트 (·)로 표시된 리스트</li>
+        <li>ol : ordered list, 순서로 표시된 리스트 </li>
+        <li>li : list, ul, ol 의 하위태그로 내용을 입력할 때 사용.</li>
+        <li>dl : description list, 용어를 정의 할 때 사용.</li>
+        <li>dt : 타이틀 개념</li>
+        <li>dd : 내용 개념</li>
+        <li>a : anchor , 웹페이지에서 링크를 통해 다른 페이지로 이동하거나 해당 문서 내에서 이동할 수 있는 태그
+            <br> -> href (Hypertext Reference) : 하이퍼텍스트 참고, 연결할 주소를 설정하는 속성. <br>
+            -> title : 마우스 호버 시, 해당 링크에 대한 설명 선언. <br>
+            -> target : 링크를 클릭할 때 창을 생성하는 방식  <br>
+            &nbsp; &nbsp; → _self : 해당 창에서 페이지 생성 (기본 값으로, 페이지 이동 없음) <br>
+            &nbsp; &nbsp; → _blank : 새 창에서 페이지 생성 <br>
+            &nbsp; &nbsp; → _parent : 부모 창에서 페이지 생성 <br>
+            &nbsp; &nbsp; → _top : 가장 상위 창에서 페이지 생성
+
+        </li>
+        <li>br : Break, 줄바꿈 요소</li>
+        <li>hr : horizontal rule, 가로, 세로 선을 그을 수 있고 줄바꿈 효과도 있어 단독으로 사용 가능.</li>
+        <li>pre : preformatted, 고정된 끌꼴을 사용하며 표현되며, 사용된 띄어쓰기와 줄바꿈이 모두 그대로 브라우저 화면에 나타남.</li>
+        <li>table : tbody, tr, td 또는 colgroup 로 이루어진 표.</li>
+        <li>tr : table raw, table 에 행을 추가할 때 사용. </li>
+        <li>td : table data, table 에 cell 값을 (내용) 입력할 때 사용. <br>
+            -> colspan : 1개의 cell이 2개 이상의 열 정보를 가질 때, 셀 병합 기능처럼 사용한다. <br>
+            -> rowspan : 1개의 cell이 2개 이상의 행 정보를 가질 때, 셀 병합 기능처럼 사용한다.
+        </li>
+        <li>em : 강조하는 내용의 텍스트를 작성할 때 진하게 표시.</li>
+        <li>label : 사용자 인터페이스 항목의 설명을 나타낼 때 사용하며, 해당 태그안에 적힌 텍스트를 입력하면 label 과 연결된 양식창이 선택됩니다. <br>
+            -> for : label 과 양식창을 연결할때 사용합니다. 연결할 입력 양식창의 id 를 사용하여 연결함.        
+        </li>
+
+    </ul>
 
 
     <strong>.data() .attr() 참고</strong>
 
-    url : https://gxnzi.tistory.com/55
+    <a href="https://gxnzi.tistory.com/55">url : https://gxnzi.tistory.com/55</a>
 
     <br>
 
