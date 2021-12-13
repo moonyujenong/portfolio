@@ -1,0 +1,140 @@
+<main id="container" class="theme-main">
+    <div class="content-layout ">
+        <div class="content-layout">
+            
+            <div class="layout-bg layout-01">
+                <div class="layout-content-text">
+                    <span style="font-size: 20px;">🙌</span>
+                    <h3 class="layout-content-title intro" style="display: none;">안녕하세요</h3>
+                    <button class="tell-more-btn" type="button">Tell me more</button>
+                </div>
+            </div>
+
+            <div class="layout-bg layout-02" style="height:auto;">
+                <div class="layout-content-text">
+                    <h3 class="layout-content-title " style=" color: #141414;">SERVICES</h3>
+                    
+                    <div class="content-list-wrap">
+                        <ul class="content-list">
+                            <li class="content-list-item">
+                                <div class="content-icon-box">
+                                    <span class="content-icon responsive"></span>
+                                </div>
+
+                                <span class="content-explan-title">Responsive</span>
+                                <p class="content-explan-item">
+                                    웹과 모바일에 모두 맞춘 반응형 페이지를 제작하여 페이지에 접근하는 다양한 디바이스에 대응하며, 
+                                    뿐만아니라 PC/Mobile 각 각에 맞춘 적응형 웹 또한 제작 가능합니다.</p>
+                            </li>
+
+                            <li class="content-list-item">
+                                <div class="content-icon-box">
+                                    <span class="content-icon git-skill"></span>
+                                </div>
+
+                                <span class="content-explan-title">GitLab</span>
+                                <p class="content-explan-item">
+                                    작업한 파일을 GitLab 에 pull, push 하여 작업물을 안전하게 백업하고, 팀원들과 공유하여 쉬운 작업이 가능합니다. 
+                                </p>
+                            </li>
+
+                            <li class="content-list-item">
+                                <div class="content-icon-box">
+                                    <span class="content-icon Front-end"></span>
+                                </div>
+
+                                <span class="content-explan-title">Front-end</span>
+                                <p class="content-explan-item">
+                                    주로 HTML5, CSS3, SCSS 를 사용하여 퍼블리싱 작업을 진행하며, 필요에 따라 Javascript, jquery 도 사용하여 간단한 이벤트 동작이나 스크립트 구현이 가능합니다.
+                                    또한 지도같은 경우 API 를 이용하여 구현 가능합니다.
+                                </p>
+                            </li>
+
+                            <li class="content-list-item">
+                                <div class="content-icon-box">
+                                    <span class="content-icon Library"></span>
+                                </div>
+
+                                <span class="content-explan-title">Library</span>
+                                <p class="content-explan-item">
+                                    배너나 나열된 객체들의 슬라이드와 같은 이벤트 동작이 필요할 경우 적절한 플러그인 및 프레임 워크 등을 찾아
+                                    코드에 대입하여 구현 가능합니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="layout-bg layout-03">
+                <div class="layout-content-text">
+                    
+                    <h3 class="layout-content-title" style=" color: #fff;">PORTFOLIO</h3>
+                    
+                    <div class="portfolio-list-wrap">
+                        <div class="swiper portfolio-list-slide">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide portfolio-list-item ">
+                                    <a href="#" class="portfolio-list-link">
+                                        <div class="portfolio-item-img-box">
+                                            <div class="item-img" style="background-image: url();"></div>
+                                        </div>
+
+                                        <div class="portfolio-item-subject">
+                                            <h3 class="item-subject-title">프로젝트 명</h3>
+                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide portfolio-list-item">
+                                    <a href="#" class="portfolio-list-link">
+                                        <div class="portfolio-item-img-box">
+                                            <div class="item-img" style="background-image: url();"></div>
+                                        </div>
+
+                                        <div class="portfolio-item-subject">
+                                            <h3 class="item-subject-title">프로젝트 명</h3>
+                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</main>
+
+<script type="text/javascript">
+    $(function(){
+        var swiper = new Swiper(".portfolio-list-slide", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints : {
+                480 : {
+                    slidesPerView: 2.2,
+                },
+                768 : {
+                    slidesPerView: 2.7,
+                },
+                992 : {
+                    slidesPerView: 3.3,
+                },
+            }
+        });
+    })
+</script>

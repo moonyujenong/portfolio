@@ -1,0 +1,84 @@
+
+
+
+<header class="theme-header" id="ui_header">
+    <div class="inner-header">
+        <div class="head-logo-box">
+            <img src="" alt="로고 이미지">
+        </div>
+
+        
+        <nav class="theme-nav pc-mode">
+            <ul class="menu-list">
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">SERVICES</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">PORTFOLIO</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">TIMELINE</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">CONTACT</span></a>
+                </li>
+                <li class="menu-list-item">
+                    <a href="#" class="menu-list-link"><span class="menu-list-text">GIT SOURCES</span></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mobile-side-menu-wrap">
+            <button class="menu-btn" type="button">
+                <span class="menu-text">MENU</span>
+                <i class="xi-hamburger-back"></i>
+            </button>
+            
+
+            
+        </div>
+        
+       
+    </div>
+
+    
+</header>
+
+<div class="mobile-side-menu">
+    <div class="mobile-side-dimmed"></div>
+    <nav class="theme-nav mobile-mode open">
+        <ul class="menu-list">
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">SERVICES</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">PORTFOLIO</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">TIMELINE</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">CONTACT</span></a>
+            </li>
+            <li class="menu-list-item">
+                <a href="#" class="menu-list-link"><span class="menu-list-text">GIT SOURCES</span></a>
+            </li>
+        </ul>
+    </nav>    
+</div>
+
+
+<script type="text/javascript">
+    
+    $(function(){
+        $('.menu-btn').click(function(){
+            $('.mobile-side-menu').toggleClass('open');
+        });
+
+        $('.mobile-side-dimmed').click(function(){
+            $('.mobile-side-menu').removeClass('open');
+        });
+    });
+
+
+</script> 
