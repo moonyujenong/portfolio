@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   header:
     title: hi! 
-    text: 안녕하세요 
+    text: 안녕하세요?>
     button: Tell Me More
     buttonlink: "#services"
 

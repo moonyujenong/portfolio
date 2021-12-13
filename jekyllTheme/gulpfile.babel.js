@@ -9,7 +9,7 @@ if (process.env.SOURCEMAPS === 'true' || process.env.SOURCEMAPS === '1') {
 
 // scss 사용 할 때
 const taskSass = function () {
-  return gulp.src(['./**/**/scss/**/*.scss'])
+  return gulp.src(['./scss/**/*.scss'])
     .pipe($.if(generateSourceMaps, $.sourcemaps.init()))
     .pipe($.plumber())
     .pipe($.sass({
@@ -22,13 +22,13 @@ const taskSass = function () {
     }))
     .pipe($.if(generateSourceMaps, $.sourcemaps.write('.')))
     .pipe(gulp.dest('.'))
-}
+} 
 taskSass.displayName = 'sass'
 
 // const taskPosthtml = function () {
 //   const options = {
 //     root: '../markup/src'
-//   }
+//   } 
 //
 //   const plugins = [
 //     require('posthtml-extend')(options),
@@ -42,7 +42,7 @@ taskSass.displayName = 'sass'
 // taskPosthtml.displayName = 'posthtml'
 
 const taskWatch = function () {
-  gulp.watch(['./**/**/scss/**/*.scss'], gulp.series(taskSass))
+  gulp.watch(['./scss/**/*.scss'], gulp.series(taskSass))
   // gulp.watch(['./src/assets/src/scss/**/*.scss'], gulp.series(taskSass))
   // gulp.watch(['Components/Themes/assets/src/js/*.js'], gulp.series(taskScript))
   // gulp.watch(['../markup/src/**/*.html'], gulp.series(taskPosthtml))
