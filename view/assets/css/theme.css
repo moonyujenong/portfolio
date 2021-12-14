@@ -294,7 +294,6 @@ button:focus, button:active {
   background: url(../img/layout-03.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  display: table;
   background-size: cover;
 }
 
@@ -456,6 +455,16 @@ button:focus, button:active {
   color: #767676;
 }
 
+.theme-main .portfolio-list-slide .swiper-wrapper {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.theme-main .portfolio-list-slide .swiper-wrapper .swiper-slide {
+  height: auto;
+}
+
 .theme-main .portfolio-list-wrap {
   width: 100%;
 }
@@ -464,6 +473,50 @@ button:focus, button:active {
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
+  -webkit-box-shadow: 4px 15px 20px 0 rgba(31, 184, 184, 0.15);
+          box-shadow: 4px 15px 20px 0 rgba(31, 184, 184, 0.15);
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-list-link {
+  display: block;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box .item-img {
+  width: 100%;
+  padding-top: 100%;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  background-color: #ececec;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box .item-img:hover {
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-subject {
+  padding: 10px;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-subject .item-subject-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+  color: #141414;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-subject .subject-sub-title {
+  font-size: 15px;
+  font-weight: 400;
+  color: #767676;
 }
 
 .theme-main .container-custom {

@@ -89,7 +89,7 @@
                                         </div>
 
                                         <div class="portfolio-item-subject">
-                                            <h3 class="item-subject-title">프로젝트 명</h3>
+                                            <h3 class="item-subject-title">구인구직 사이트 <br> (반응형) </h3>
                                             <span class="subject-sub-title">프로젝트 설명</span>
                                         </div>
                                     </a>
@@ -102,17 +102,66 @@
                                         </div>
 
                                         <div class="portfolio-item-subject">
-                                            <h3 class="item-subject-title">프로젝트 명</h3>
+                                            <h3 class="item-subject-title">자격증 사이트 <br> (반응형) </h3>
+                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide portfolio-list-item">
+                                    <a href="#" class="portfolio-list-link">
+                                        <div class="portfolio-item-img-box">
+                                            <div class="item-img" style="background-image: url();"></div>
+                                        </div>
+
+                                        <div class="portfolio-item-subject">
+                                            <h3 class="item-subject-title">기업 홈페이지 <br> (반응형) </h3>
+                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide portfolio-list-item">
+                                    <a href="#" class="portfolio-list-link">
+                                        <div class="portfolio-item-img-box">
+                                            <div class="item-img" style="background-image: url();"></div>
+                                        </div>
+
+                                        <div class="portfolio-item-subject">
+                                            <h3 class="item-subject-title">기업 홈페이지2 <br> (반응형) </h3>
+                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="swiper-slide portfolio-list-item">
+                                    <a href="#" class="portfolio-list-link">
+                                        <div class="portfolio-item-img-box">
+                                            <div class="item-img" style="background-image: url();"></div>
+                                        </div>
+
+                                        <div class="portfolio-item-subject">
+                                            <h3 class="item-subject-title">마이크로 홈페이지 <br> (반응형) </h3>
                                             <span class="subject-sub-title">프로젝트 설명</span>
                                         </div>
                                     </a>
                                 </div>
                             </div>
 
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+
+            <div class="layout-bg layout-04">
+                <div class="layout-content-text">
+                    <h3 class="layout-content-title" style=" color: #fff;">TIMELINE</h3>
                 </div>
             </div>
             
@@ -123,12 +172,15 @@
 <script type="text/javascript">
     $(function(){
         var swiper = new Swiper(".portfolio-list-slide", {
-            slidesPerView: "auto",
-            spaceBetween: 20,
-            freeMode: true,
+            slidesPerView: 1.2,
+            spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
             breakpoints : {
                 480 : {
