@@ -92,7 +92,7 @@
     .layout-content-title { 
         font-size: 35px;
         font-weight: 600;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
         
 
         &.intro {
@@ -212,6 +212,9 @@
     }
 
     .portfolio-list-slide {
+        position: relative;
+        
+
         .swiper-wrapper {
             align-items: stretch;
 
@@ -219,10 +222,62 @@
                 height: auto;
             }
         }
+
+       
+    }
+
+    .slide-paging {
+        position: relative;
+        bottom: -45px;
+
+        .swiper-pagination-bullet {
+            background-color: #fff;
+            opacity: 0.7;
+            width: 10px;
+            height: 10px;
+
+            &.swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+        }
+    }
+
+    .slide-arrows {
+        display: none;
+
+        .swiper-button-next, .swiper-button-prev {
+            width: 50px;
+            height: 50px;
+            background-color: #fff;
+
+            border-radius: 100px;
+            box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.14);
+
+            &::after {
+                font-size: 14px;
+                color: #484848;
+                font-weight: 600;
+
+            }
+
+            &.swiper-button-disabled {
+                display: none;
+            }
+        }
+
+        .swiper-button-next {
+            right: -10px;
+        }
+
+        .swiper-button-prev {
+            left: -10px;
+        }
+
     }
 
     .portfolio-list-wrap {
         width: 100%;
+
 
 
         .portfolio-list-item {
@@ -404,8 +459,8 @@
 #timeline {
 position: relative;
 padding: 2em 0;
-margin-top: 2em;
-margin-bottom: 2em;
+// margin-top: 2em;
+// margin-bottom: 2em;
 
 &::before {
   /* this is the vertical line */
@@ -425,6 +480,8 @@ margin-bottom: 2em;
 .timeline-block {
 position: relative;
 margin: 2em 0;
+display: inline-block;
+
 
 &:after {
   content: "";
@@ -585,7 +642,7 @@ border-radius: 10px;
 
   &.timeline-year-long {
     &.left strong {
-      margin-left: -5px;
+      margin-left: 45px;
     }
   }
 
@@ -602,7 +659,7 @@ border-radius: 10px;
     font-weight: 700;
     margin-top: 0px;
     margin-left: -5px;
-    margin-top: -40px;
+    margin-top: -55px;
     // background: #fff;
   }
 
@@ -643,8 +700,8 @@ border-radius: 10px;
 
 @media only screen and (min-width: 1170px) {
 #timeline {
-  margin-top: 3em;
-  margin-bottom: 3em;
+//   margin-top: 3em;
+//   margin-bottom: 3em;
 
   &::before {
     left: 50%;
@@ -709,23 +766,56 @@ border-radius: 10px;
 
 .final-circle {
     background-color: #fecd2c;
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
     border-radius: 100px;
-    margin-left: -42px;
+    margin-left: -15px !important;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     box-shadow: 0 0 0 5px #e6bb2e;
+    position: relative;
+    cursor: pointer;
+    top: 40px !important;
 
     .final-circle-text {
         color: #fff;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         line-height: normal;
         letter-spacing: -0.64px;
 
+    }
+    border: 2px solid white;
+    color: white;
+    text-transform: uppercase;
+    animation: finalRipple 1.5s linear infinite;
+    transition: all 0.7s ease;
+
+
+    &:hover
+    {
+    transform: scale(1.1);
+    }
+    &:focus
+    {
+        outline:none;
+    }
+
+    @keyframes finalRipple {
+        0% {
+          box-shadow: 0 0 0 0 rgba(#fff, 0.3),
+            0 0 0 1px rgba(#fff, 0.3),
+            0 0 0 3px rgba(#fff, 0.3),
+            0 0 0 5px rgba(#fff, 0.3);
+        }
+        100% {
+          box-shadow: 0 0 0 0 rgba(#fff, 0.3),
+            0 0 0 4px rgba(#fff, 0.3),
+            0 0 0 20px rgba(#fff, 0),
+            0 0 0 30px rgba(#fff, 0);
+        }
     }
 
 }
@@ -744,6 +834,32 @@ border-radius: 10px;
                 }
 
             }
+        }
+
+        .slide-arrows {
+            display: block;
+        }
+
+        .content-layout {
+            .layout-bg {
+                &.layout-03  {
+                    padding: 80px 0;
+                }
+            }
+        }
+
+        .timeline-block {
+            display: block;
+        }
+    }
+
+    .final-circle {
+        width: 85px;
+        height: 85px;
+        margin-left: -42px !important;
+
+        .final-circle-text {
+            font-size: 17px;
         }
     }
 }

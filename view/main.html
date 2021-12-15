@@ -1,7 +1,7 @@
 <main id="container" class="theme-main">
     <div class="content-layout ">
         <div class="content-layout">
-            
+                
             <div class="layout-bg layout-01 dimmed">
                 <div class="layout-content-text">
                     <span style="font-size: 25px; margin-bottom: 20px;">🙌</span>
@@ -11,7 +11,7 @@
                             <div class="chevron"></div>
                             <div class="chevron"></div>
                             <div class="chevron"></div>
-                          </div>
+                            </div>
                     </button>
                 </div>
             </div>
@@ -148,9 +148,16 @@
                                 </div>
                             </div>
 
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
+                            
+                                
+                        </div>
 
+                        <div class="slide-arrows">
+                            <div class="swiper-button-next slide-arrows--next"></div>
+                            <div class="swiper-button-prev slide-arrows--prev"></div>
+                        </div>
+
+                        <div class="slide-paging">
                             <div class="swiper-pagination"></div>
                         </div>
                     </div>
@@ -159,7 +166,7 @@
             </div>
 
 
-            <!-- 타임라인 -->
+                <!-- 타임라인 -->
             <div class="layout-bg layout-04 dimmed">
                 <div class="layout-content-text">
                     <h3 class="layout-content-title" style=" color: #fff;">TIMELINE</h3>
@@ -219,18 +226,17 @@
                         </div> <!-- timeline-block -->
 
 
-                        <!-- 마지막 -->
+                        <!-- 마지막  timeline block-->
                         <div class="timeline-block">
-                            <div class="timeline-year right final-circle">
+                            <div class="timeline-year right final-circle ">
                                 <span class="final-circle-text">
                                     With <br> me ! <br> 🖐️ 
                                 </span>
                             </div>
                         </div> <!-- timeline-block -->
-                    
                 </div>
             </div>
-            
+            </div>
         </div>
     </div>
 </main>
@@ -240,6 +246,8 @@
         var swiper = new Swiper(".portfolio-list-slide", {
             slidesPerView: 1.2,
             spaceBetween: 30,
+            autoplay : true,
+            delay : 2000,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
