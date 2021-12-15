@@ -2,7 +2,7 @@
     <div class="content-layout ">
         <div class="content-layout">
             
-            <div class="layout-bg layout-01">
+            <div class="layout-bg layout-01 dimmed">
                 <div class="layout-content-text">
                     <span style="font-size: 25px; margin-bottom: 20px;">🙌</span>
                     <h3 class="layout-content-title intro" style="display: none;">안녕하세요</h3>
@@ -74,7 +74,7 @@
 
 
 
-            <div class="layout-bg layout-03">
+            <div class="layout-bg layout-03 dimmed">
                 <div class="layout-content-text">
                     
                     <h3 class="layout-content-title" style=" color: #fff;">PORTFOLIO</h3>
@@ -159,9 +159,32 @@
             </div>
 
 
-            <div class="layout-bg layout-04">
+            <!-- 타임라인 -->
+            <div class="layout-bg layout-04 dimmed">
                 <div class="layout-content-text">
                     <h3 class="layout-content-title" style=" color: #fff;">TIMELINE</h3>
+                </div>
+
+                <div class="tiem-line-wrap container">          
+                    <div id="timeline">
+                        <div class="timeline-block">
+                          <div class="timeline-year right" data-anime="scroll"><strong>21.05.18</strong></div> <!-- timeline-year -->
+                          <div class="timeline-content" data-anime-left="scroll-left">
+                            <div class="timeline-title">
+                            '메타버스 얼라이언스 출범'
+                            </div>
+                            <div class="timeline-item">□ 국내 확장가상세계(메타버스) 관련 산업계와 협회 등이 중심이 되어 확장가상세계(메타버스) 생태계를 조성하고 현실과 가상의 다양한 영역에서 개방형 확장가상세계(메타버스) 플랫폼을 기획하면서 실현해 나가고자 결성한 ‘확장가상세계(메타버스) 얼라이언스’가 첫발을 내디뎠다.</div>
+                            
+                    
+                            <div class="timeline-box">
+                                <div class="box-title"> < 확장가상세계(메타버스) 얼라이언스 출범식 참석기업·기관 ></div>
+                    
+                               
+                            </div>
+                          </div> <!-- timeline-content -->
+                    
+                        </div> <!-- timeline-block -->
+                    
                 </div>
             </div>
             
@@ -194,5 +217,61 @@
                 },
             }
         });
-    })
+    });
+</script>
+
+<script type="text/javascript">
+//SCROLL ANIMATED
+
+$('html,body').ready(function(){
+
+//DEBOUNCE
+
+debounce = function(func, wait, immediate) {
+  var timeout;
+  return function() {
+      var context = this, args = arguments;
+      var later = function() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
+      };
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait); 
+      if (callNow) func.apply(context, args);
+      };
+}; 
+  
+//SCROLL ANIMATED
+
+$(function(){
+
+
+  var $target = $('[data-anime="scroll"],[data-anime-top="scroll-top"],[data-anime-left="scroll-left"],[data-anime-right="scroll-right"],[data-anime-bottom="scroll-bottom"]'),
+    animationClass = 'animate',
+    offset = $(window).height() * 5/6;
+
+  function animeScroll(){
+    var documentTop = $(document).scrollTop();
+    $target.each(function(){
+      var itemTop = $(this).offset().top;
+      
+      if (documentTop > itemTop - offset){
+        $(this).addClass(animationClass);
+      } else {
+        $(this).removeClass(animationClass);
+      }
+    });
+  }
+
+  animeScroll();
+
+  $('html,body').scroll(debounce(function(){
+    animeScroll();
+  }, 90));
+  
+
+});
+
+});
 </script>
