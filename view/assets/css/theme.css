@@ -749,7 +749,7 @@ button:focus, button:active {
 }
 
 .timeline-block .timeline-year.left strong {
-  margin-left: -135px;
+  margin-left: -115px;
 }
 
 .timeline-year {
@@ -817,7 +817,7 @@ button:focus, button:active {
   padding: 10px;
   font-size: 15px;
   line-height: 18px;
-  color: #141414;
+  color: #fff;
 }
 
 .timeline-item .item-desc {
@@ -954,6 +954,34 @@ button:focus, button:active {
     border-color: transparent;
     border-right-color: #ebebeb;
   }
+}
+
+.final-circle {
+  background-color: #fecd2c;
+  width: 85px;
+  height: 85px;
+  border-radius: 100px;
+  margin-left: -42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 5px #e6bb2e;
+          box-shadow: 0 0 0 5px #e6bb2e;
+}
+
+.final-circle .final-circle-text {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
 }
 
 @media (min-width: 992px) {
