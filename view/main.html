@@ -210,6 +210,7 @@
                             <div class="timeline-year right" data-anime="scroll"><strong>20.09 ~ </strong></div> <!-- timeline-year -->
                             <div class="timeline-content" data-anime-left="scroll-left">
                                 <div class="timeline-title">
+
                                     XEHub 입사 <span style="color: #f5332b; font-size: 20px;">(재직중)</span>
                                 </div>
                                 <div class="timeline-item">
@@ -236,6 +237,60 @@
                         </div> <!-- timeline-block -->
                 </div>
             </div>
+            </div>
+
+
+            <!-- 컨텍트 -->
+            <div class="layout-bg layout-05 dimmed">
+                <div class="layout-content-text">
+                    <h3 class="layout-content-title" style="color: #fff;">CONTACT ME</h3>
+                    
+                    <div class="contact-wrap">
+                        <form action="https://script.google.com/macros/s/AKfycbwd7nDVIKEfZfJwaQ2JcwK6iL7tLtLVp2gyZEBWpj61Y_cQvfg/exec"  method="POST" data-email="gkrry20619@naver.com" target="iframe1">
+                            <div class="contact-outline" >
+                                <div class="contact-content" style="align-self: center;">
+                                    <h3 class="contact-content-title" style="display: block;">
+                                       <b> 함께하고 싶으시면 <br>
+                                        메일을 <br>
+                                        보내주세요!</b> 🙏
+                                    </h3>
+                                </div>    
+                                <div class="contact-content">
+                                    <div class="form-group">
+                                        <label class="contact-label" for="name">성함</label>
+                                        <input type="text" class="form-control col-md-6" name="name" id="name" placeholder="성함을 입력해주세요.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="contact-label" for="number">핸드폰 번호</label>
+                                        <input type="text" class="form-control col-md-6" id="number" name="number" placeholder="핸드폰 번호를 입력해주세요.">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="contact-label" for="content">내용</label>
+                                        <textarea name="content" id="content" class="contact-mail-content" cols="" rows="" placeholder="내용을 입력해주세요."></textarea>
+                                    </div>
+
+ 
+                                    <button class="submit-btn">보내기</button>
+                                    <!-- <a href="mailto:gkrry20619@naver.com" class="submit-btn">보내기</a> -->
+                                    
+                                    
+                                </div>    
+                            </div>
+                        </form>
+                        <iframe id="iframe1" name="iframe1" style="display: none;"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            
+            <!-- 깃소스 -->
+            <div class="layout-bg layout-06">
+                <div class="layout-content-text">
+                    <h3 class="layout-content-title" style="color: #fff;">GIT SOURCES</h3>
+                    <a href="https://github.com/moonyujenong?tab=repositories" class="go-gitsite" title="Git 바로가기">Git 바로가기</a>
+                </div>
             </div>
         </div>
     </div>
@@ -331,6 +386,36 @@ $(function(){
 
 <script type="text/javascript">
     $(function(){
+        $('.submit-btn').click(function(){
+            
+            
+            var name = $("#name").val();
+            var phone = $("#number").val();
+            var content = $("#content").val();
 
+            if ( name === "") {
+                alert("성함을 입력해주세요");
+                
+                return false;
+            }
+            else if ( phone === "" ) {
+                alert("핸드폰 번호를 입력해주세요");
+                
+                return false;
+            }
+            else if (content === "" ) {
+                alert("내용을 입력해주세요");
+                
+                return false;
+            }
+            else {
+                
+                alert("메일이 정상적으로 발송되었습니다!");
+                location.reload();
+            }
+               
+
+            
+        });
     });
 </script>

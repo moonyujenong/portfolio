@@ -12,6 +12,7 @@
             width: 100vw;
             height: 100vh;
             position: relative;
+            padding: 50px 0;
 
             &.dimmed {
                 &::before {
@@ -46,8 +47,6 @@
                 background-attachment: fixed;
                 display: table;
                 background-size: cover;
-
-                padding: 50px 0;
             }
 
             &.layout-03 {
@@ -62,12 +61,31 @@
 
             &.layout-04 {
                 height: auto;
-                padding: 50px 0;
+                
                 background: url(../img/layout-04.png);
                 background-repeat: no-repeat; 
                 background-attachment: fixed;
                 // display: table;
                 background-size: cover;
+            }
+
+            &.layout-05 {
+              height: auto;
+              
+              background: url(../img/layout-05.png);
+              background-repeat: no-repeat; 
+              background-attachment: fixed;
+              // display: table;
+              background-size: cover;
+            }
+
+            &.layout-06 {
+              height: auto;
+              background-color: #000;
+
+              .layout-content-title {
+                margin-bottom: 30px;
+              }
             }
             
         }
@@ -820,8 +838,124 @@ border-radius: 10px;
 
 }
 
+.contact-wrap {
+  width: 100%;
+  background-color: rgba(255,255,255,0.92);
+  border-radius: 20px;
+  padding: 25px 15px ;
+  box-shadow: 4px 4px 20px 0 rgba(63, 63, 63, 0.15);
 
+    .contact-outline  {
+      display: flex;  
+      // align-items: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+
+
+      .contact-content {
+        flex: auto 1;
+        text-align: left;
+        position: relative;
+        padding-left: 25px;
+
+        .form-group {
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        &:first-child {
+          padding-bottom: 20px;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          display: block;
+          width: 5px;
+          top: 0;
+          bottom: 0;
+          background-color: #d7d7d7;
+          border-radius: 10px;
+          left: 0;
+        }
+
+        .contact-content-title {
+          margin: 0;
+          height: 100%;
+          font-size: 35px;
+          line-height: 1.18;
+          letter-spacing: -0.4px;
+          // font-weight: 800;
+        }
+      }
+    }
+
+  .contact-label {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+
+  }
+
+  input[type="text"] {
+    height: 45px;
+
+    &::placeholder {
+      color: #d7d7d7;
+      font-size: 14px;
+    }
+  }
+
+  .contact-mail-content {
+    width: 100%;
+    border-color: #ced4da;
+    resize: none;
+    border-radius: 4px;
+    padding: 8px;
+    min-height: 150px;
+
+    &:focus, &:active {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #d7d7d7;
+      font-size: 14px;
+    }
+  }
+
+
+  .submit-btn {
+    width: 100%;
+    display: block;
+    border-radius: 4px;
+    background-color:#fecd2c;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+  }
+}
    
+.go-gitsite {
+  color: #141414;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #fff;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+
+  &:focus, &:active, &:hover {
+    color: #141414;
+  }
+}
+
 
 @media (min-width:992px) {
     .theme-main {
@@ -829,6 +963,8 @@ border-radius: 10px;
 
         .content-layout {
             .layout-bg {
+              padding: 80px 0;
+
                 &.layout-01 {
                     max-height: none;
                 }
@@ -851,16 +987,54 @@ border-radius: 10px;
         .timeline-block {
             display: block;
         }
+
+        .content-list-wrap {
+          .content-list {
+            flex-wrap: nowrap;
+
+            .content-list-item {
+              width: auto;
+              flex: 1;
+
+              .content-explan-title {
+                font-size: 25px;
+                margin-bottom: 7px;
+
+              }
+
+              .content-explan-item {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+        .layout-content-title {
+          font-size: 45px;
+          font-weight: 800;
+          margin-bottom: 60px;
+        }
     }
 
     .final-circle {
-        width: 85px;
-        height: 85px;
-        margin-left: -42px !important;
+        width: 90px;
+        height: 90px;
+        margin-left: -45px !important;
 
         .final-circle-text {
             font-size: 17px;
         }
+    }
+
+
+    .contact-wrap {
+      .contact-outline {
+        .contact-content {
+          &:first-child {
+            padding-bottom: 0; 
+          }
+        }
+      }
     }
 }
 

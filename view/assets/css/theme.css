@@ -257,6 +257,7 @@ button:focus, button:active {
   width: 100vw;
   height: 100vh;
   position: relative;
+  padding: 50px 0;
 }
 
 .theme-main .content-layout .layout-bg.dimmed::before {
@@ -285,7 +286,6 @@ button:focus, button:active {
   background-attachment: fixed;
   display: table;
   background-size: cover;
-  padding: 50px 0;
 }
 
 .theme-main .content-layout .layout-bg.layout-03 {
@@ -299,11 +299,27 @@ button:focus, button:active {
 
 .theme-main .content-layout .layout-bg.layout-04 {
   height: auto;
-  padding: 50px 0;
   background: url(../img/layout-04.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+.theme-main .content-layout .layout-bg.layout-05 {
+  height: auto;
+  background: url(../img/layout-05.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.theme-main .content-layout .layout-bg.layout-06 {
+  height: auto;
+  background-color: #000;
+}
+
+.theme-main .content-layout .layout-bg.layout-06 .layout-content-title {
+  margin-bottom: 30px;
 }
 
 .theme-main .content-layout .layout-content-text {
@@ -1071,9 +1087,171 @@ button:focus, button:active {
   }
 }
 
+.contact-wrap {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 20px;
+  padding: 25px 15px;
+  -webkit-box-shadow: 4px 4px 20px 0 rgba(63, 63, 63, 0.15);
+          box-shadow: 4px 4px 20px 0 rgba(63, 63, 63, 0.15);
+}
+
+.contact-wrap .contact-outline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-wrap .contact-outline .contact-content {
+  -webkit-box-flex: 1;
+      -ms-flex: auto 1;
+          flex: auto 1;
+  text-align: left;
+  position: relative;
+  padding-left: 25px;
+}
+
+.contact-wrap .contact-outline .contact-content .form-group:last-child {
+  margin-bottom: 0;
+}
+
+.contact-wrap .contact-outline .contact-content:first-child {
+  padding-bottom: 20px;
+}
+
+.contact-wrap .contact-outline .contact-content::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 5px;
+  top: 0;
+  bottom: 0;
+  background-color: #d7d7d7;
+  border-radius: 10px;
+  left: 0;
+}
+
+.contact-wrap .contact-outline .contact-content .contact-content-title {
+  margin: 0;
+  height: 100%;
+  font-size: 35px;
+  line-height: 1.18;
+  letter-spacing: -0.4px;
+}
+
+.contact-wrap .contact-label {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.contact-wrap input[type="text"] {
+  height: 45px;
+}
+
+.contact-wrap input[type="text"]::-webkit-input-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap input[type="text"]::-moz-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap input[type="text"]:-ms-input-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap input[type="text"]::-ms-input-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap input[type="text"]::placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap .contact-mail-content {
+  width: 100%;
+  border-color: #ced4da;
+  resize: none;
+  border-radius: 4px;
+  padding: 8px;
+  min-height: 150px;
+}
+
+.contact-wrap .contact-mail-content:focus, .contact-wrap .contact-mail-content:active {
+  outline: none;
+}
+
+.contact-wrap .contact-mail-content::-webkit-input-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap .contact-mail-content::-moz-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap .contact-mail-content:-ms-input-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap .contact-mail-content::-ms-input-placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap .contact-mail-content::placeholder {
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+.contact-wrap .submit-btn {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  background-color: #fecd2c;
+  text-align: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.go-gitsite {
+  color: #141414;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #fff;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.go-gitsite:focus, .go-gitsite:active, .go-gitsite:hover {
+  color: #141414;
+}
+
 @media (min-width: 992px) {
   .theme-main {
     padding-top: 65px;
+  }
+  .theme-main .content-layout .layout-bg {
+    padding: 80px 0;
   }
   .theme-main .content-layout .layout-bg.layout-01 {
     max-height: none;
@@ -1087,13 +1265,38 @@ button:focus, button:active {
   .theme-main .timeline-block {
     display: block;
   }
+  .theme-main .content-list-wrap .content-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .theme-main .content-list-wrap .content-list .content-list-item {
+    width: auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .theme-main .content-list-wrap .content-list .content-list-item .content-explan-title {
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+  .theme-main .content-list-wrap .content-list .content-list-item .content-explan-item {
+    font-size: 16px;
+  }
+  .theme-main .layout-content-title {
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 60px;
+  }
   .final-circle {
-    width: 85px;
-    height: 85px;
-    margin-left: -42px !important;
+    width: 90px;
+    height: 90px;
+    margin-left: -45px !important;
   }
   .final-circle .final-circle-text {
     font-size: 17px;
+  }
+  .contact-wrap .contact-outline .contact-content:first-child {
+    padding-bottom: 0;
   }
 }
 
