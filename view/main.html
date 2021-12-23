@@ -2,7 +2,8 @@
     <div class="content-layout ">
         <div class="content-layout">
                 
-            <div class="layout-bg layout-01 dimmed">
+            <!-- 인트로 -->
+            <div class="layout-bg layout-01 dimmed" id="layout_01">
                 <div class="layout-content-text">
                     <span style="font-size: 25px; margin-bottom: 20px;">🙌</span>
                     <h3 class="layout-content-title intro" style="display: none;">안녕하세요</h3>
@@ -16,7 +17,8 @@
                 </div>
             </div>
 
-            <div class="layout-bg layout-02" style="height:auto;">
+            <!-- 스킬 -->
+            <div class="layout-bg layout-02" style="height:auto;" id="layout_02">
                 <div class="layout-content-text">
                     <h3 class="layout-content-title " style=" color: #141414;">SERVICES</h3>
                     
@@ -73,8 +75,8 @@
             </div>
 
 
-
-            <div class="layout-bg layout-03 dimmed">
+            <!-- 작업물 -->
+            <div class="layout-bg layout-03 dimmed" id="layout_03">
                 <div class="layout-content-text">
                     
                     <h3 class="layout-content-title" style=" color: #fff;">PORTFOLIO</h3>
@@ -85,12 +87,16 @@
                                 <div class="swiper-slide portfolio-list-item ">
                                     <a href="#" class="portfolio-list-link">
                                         <div class="portfolio-item-img-box">
-                                            <div class="item-img" style="background-image: url();"></div>
+                                            <div class="item-img" style="background-image: url(./assets/img/thumb_01.png);"></div>
                                         </div>
 
                                         <div class="portfolio-item-subject">
                                             <h3 class="item-subject-title">구인구직 사이트 <br> (반응형) </h3>
-                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                            <span class="subject-sub-title">
+                                                해당 사이트는 구인구직 하는 이용자들을 위해 사용되고 있으며
+                                                구직자들뿐만 아니라 구인하는 업주들도 공고를 낼 수 있습니다. 
+                                                지역/직업 찾기가 모달 팝업으로 구성되어 있으며 메인 및 서브의 상단 배너는 Library를 통해 작업되었습니다.
+                                            </span>
                                         </div>
                                     </a>
                                 </div>
@@ -98,12 +104,18 @@
                                 <div class="swiper-slide portfolio-list-item">
                                     <a href="#" class="portfolio-list-link">
                                         <div class="portfolio-item-img-box">
-                                            <div class="item-img" style="background-image: url();"></div>
+                                            <div class="item-img" style="background-image: url(./assets/img/thumb_02.png);"></div>
                                         </div>
 
                                         <div class="portfolio-item-subject">
                                             <h3 class="item-subject-title">자격증 사이트 <br> (반응형) </h3>
-                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                            <span class="subject-sub-title">
+                                                해당 사이트는 자격증에 대한 정보를 모두 모아놓은 사이트 입니다.
+                                                기존 사이트에서 리뉴얼 된 디자인으로 퍼블리싱 되었습니다. 
+                                                메인 및 서브 페이지에서의 slideToggle 기능은 Jquery & javascript 로 제작되었으며 
+                                                메인 와이드 배너는 swiper 기능을 이용해 제작하였습니다.
+                                                레이아웃은 Bootstrap Grid 를 이용하여 제작하였습니다.
+                                            </span>
                                         </div>
                                     </a>
                                 </div>
@@ -111,12 +123,15 @@
                                 <div class="swiper-slide portfolio-list-item">
                                     <a href="#" class="portfolio-list-link">
                                         <div class="portfolio-item-img-box">
-                                            <div class="item-img" style="background-image: url();"></div>
+                                            <div class="item-img" style="background-image: url(./assets/img/thumb_03.png);"></div>
                                         </div>
 
                                         <div class="portfolio-item-subject">
                                             <h3 class="item-subject-title">기업 홈페이지 <br> (반응형) </h3>
-                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                            <span class="subject-sub-title">
+                                                해당 사이트는 데이터 및 서버 구축 용도의 사이트로 기존 사이트에서 리뉴얼 된 디자인으로 퍼블리싱 되었습니다.
+                                                해당 사이트의 slide 기능 또한 Jquery 로 제작하였습니다.
+                                            </span>
                                         </div>
                                     </a>
                                 </div>
@@ -124,12 +139,16 @@
                                 <div class="swiper-slide portfolio-list-item">
                                     <a href="#" class="portfolio-list-link">
                                         <div class="portfolio-item-img-box">
-                                            <div class="item-img" style="background-image: url();"></div>
+                                            <div class="item-img" style="background-image: url(./assets/img/thumb_04.png);"></div>
                                         </div>
 
                                         <div class="portfolio-item-subject">
                                             <h3 class="item-subject-title">기업 홈페이지2 <br> (반응형) </h3>
-                                            <span class="subject-sub-title">프로젝트 설명</span>
+                                            <span class="subject-sub-title">
+                                                해당 사이트는 기업에서 운영하는 홈페이지로
+                                                기업의 공정 및 장비에 대한 과정&설명이 포함되어 있습니다. 
+                                                회사소개 > 사업장 현황의 지도 Api 같은 경우, 구글지도 및 카카오 지도 API 를 사용하여 제작하였습니다.
+                                            </span>
                                         </div>
                                     </a>
                                 </div>
@@ -167,7 +186,7 @@
 
 
                 <!-- 타임라인 -->
-            <div class="layout-bg layout-04 dimmed">
+            <div class="layout-bg layout-04 dimmed" id="layout_04">
                 <div class="layout-content-text">
                     <h3 class="layout-content-title" style=" color: #fff;">TIMELINE</h3>
                 </div>
@@ -241,7 +260,7 @@
 
 
             <!-- 컨텍트 -->
-            <div class="layout-bg layout-05 dimmed">
+            <div class="layout-bg layout-05 dimmed" id="layout_05">
                 <div class="layout-content-text">
                     <h3 class="layout-content-title" style="color: #fff;">CONTACT ME</h3>
                     
@@ -286,7 +305,7 @@
 
             
             <!-- 깃소스 -->
-            <div class="layout-bg layout-06">
+            <div class="layout-bg layout-06" id="layout_06">
                 <div class="layout-content-text">
                     <h3 class="layout-content-title" style="color: #fff;">GIT SOURCES</h3>
                     <a href="https://github.com/moonyujenong?tab=repositories" class="go-gitsite" title="Git 바로가기">Git 바로가기</a>
@@ -313,7 +332,7 @@
             },
             breakpoints : {
                 480 : {
-                    slidesPerView: 2.2,
+                    slidesPerView: 1.2,
                 },
                 768 : {
                     slidesPerView: 2.7,
@@ -330,7 +349,8 @@
 <script type="text/javascript">
 //SCROLL ANIMATED
 
-$('html,body').ready(function(){
+
+$(document).ready(function(){
 
 //DEBOUNCE
 
@@ -344,7 +364,7 @@ debounce = function(func, wait, immediate) {
       };
       var callNow = immediate && !timeout;
       clearTimeout(timeout);
-      timeout = setTimeout(later, wait); 
+      timeout = setTimeout(later, wait);
       if (callNow) func.apply(context, args);
       };
 }; 
@@ -352,8 +372,6 @@ debounce = function(func, wait, immediate) {
 //SCROLL ANIMATED
 
 $(function(){
-
-
   var $target = $('[data-anime="scroll"],[data-anime-top="scroll-top"],[data-anime-left="scroll-left"],[data-anime-right="scroll-right"],[data-anime-bottom="scroll-bottom"]'),
     animationClass = 'animate',
     offset = $(window).height() * 5/6;
@@ -373,14 +391,16 @@ $(function(){
 
   animeScroll();
 
-  $('html,body').scroll(debounce(function(){
+  $(document).scroll(debounce(function(){
     animeScroll();
-  }, 90));
+  }, 200));
   
+});
+
 
 });
 
-});
+
 </script>
 
 

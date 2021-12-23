@@ -8,7 +8,7 @@ html, body {
     word-break: keep-all;
     background-color: #fff;
     font-family: 'Inter', 'Noto Sans KR', sans-serif !important ;
-    height: 100%;
+    scroll-behavior: smooth;
 }
 
 ul {
@@ -27,7 +27,7 @@ button {
     background-color: transparent;
     border: 0;
 
-    &:focus, &:active {
+    &:focus, &:active {          
         outline: none;
     }
 }

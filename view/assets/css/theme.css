@@ -6,7 +6,7 @@ html, body {
   word-break: keep-all;
   background-color: #fff;
   font-family: 'Inter', 'Noto Sans KR', sans-serif !important;
-  height: 100%;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -140,7 +140,7 @@ button:focus, button:active {
   width: 100%;
   max-width: 320px;
   background-color: #fff;
-  z-index: 35;
+  z-index: 99;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   position: fixed;
@@ -161,7 +161,7 @@ button:focus, button:active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 30;
+  z-index: 98;
   visibility: hidden;
   left: 0;
   top: 0;
@@ -549,6 +549,21 @@ button:focus, button:active {
 .theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box {
   width: 100%;
   overflow: hidden;
+  position: relative;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+  z-index: 10;
 }
 
 .theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box .item-img {
@@ -557,9 +572,16 @@ button:focus, button:active {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #ececec;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box .item-img:hover {
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box:hover::before {
+  display: none;
+}
+
+.theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box:hover .item-img {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   -webkit-transform: scale(1.05);
@@ -567,7 +589,8 @@ button:focus, button:active {
 }
 
 .theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-subject {
-  padding: 10px;
+  padding: 15px;
+  word-break: keep-all;
 }
 
 .theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-subject .item-subject-title {
@@ -1297,6 +1320,12 @@ button:focus, button:active {
   }
   .contact-wrap .contact-outline .contact-content:first-child {
     padding-bottom: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1170px) {
+  .final-circle {
+    margin-left: -25px !important;
   }
 }
 

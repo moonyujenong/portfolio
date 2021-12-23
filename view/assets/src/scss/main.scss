@@ -312,30 +312,53 @@
                 width: 100%;
                 // height: 100%;
                 overflow: hidden;
+                position: relative;
+                transition: all .2s ease-in-out;
+
+                &::before {
+                  content: '';
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0,0,0,0.15);
+                  z-index: 10;
+                }
                 
                 .item-img {
                     width: 100%;
                     padding-top: 100%;
                     transition: all .2s ease-in-out;
                     background-color: #ececec;
-    
-    
-                    &:hover {
-                        transition: all .2s ease-in-out;
-                        transform: scale(1.05);
-                    }
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
                 }
-        
+
+                &:hover {
+
+                  &::before {
+                    display: none;
+                  }
+                  .item-img {
+                    transition: all .2s ease-in-out;
+                    transform: scale(1.05);
+                  }
+                }
+         
                 
             }
-
+      
             .portfolio-item-subject {
-                padding: 10px;
+                padding: 15px;
+                word-break: keep-all;
     
                 .item-subject-title {
                     font-size: 18px;
                     font-weight: 600;
-                    margin-bottom: 4px;
+                    margin-bottom: 4px;  
                     display: block;
                     color: #141414;
                 }
@@ -439,7 +462,7 @@
         position: relative;
     }
   
-}
+} 
 
 [data-anime] {
     opacity: 0;
@@ -1038,3 +1061,8 @@ border-radius: 10px;
     }
 }
 
+@media (min-width:992px) and (max-width:1170px) {
+  .final-circle {
+    margin-left: -25px !important;
+  }
+}
