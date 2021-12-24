@@ -268,7 +268,7 @@ button:focus, button:active {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .theme-main .content-layout .layout-bg.layout-01 {
