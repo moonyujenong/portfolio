@@ -73,10 +73,27 @@
 .theme-main .content-layout .layout-bg.layout-06 {
   height: auto;
   background-color: #000;
+  background-image: url(../img/git-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.theme-main .content-layout .layout-bg.layout-06::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .theme-main .content-layout .layout-bg.layout-06 .layout-content-title {
   margin-bottom: 30px;
+  text-shadow: 1px 3px 5px #ddb01a;
 }
 
 .theme-main .content-layout .layout-content-text {
@@ -129,6 +146,7 @@
   display: inline-block;
   width: 90px;
   height: 90px;
+  z-index: 10;
 }
 
 .theme-main .tell-more-btn:before {
@@ -325,7 +343,7 @@
 
 .theme-main .portfolio-list-wrap .portfolio-list-item .portfolio-item-img-box .item-img {
   width: 100%;
-  padding-top: 100%;
+  padding-top: 70%;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   background-color: #ececec;
@@ -1011,13 +1029,13 @@
 
 .go-gitsite {
   color: #141414;
-  font-size: 15px;
+  font-size: 19px;
   font-weight: 500;
   background-color: #fff;
   width: 100%;
-  max-width: 120px;
+  max-width: 180px;
   margin: 0 auto;
-  padding: 10px;
+  padding: 12px 15px;
   cursor: pointer;
   border-radius: 4px;
 }

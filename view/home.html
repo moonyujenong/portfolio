@@ -68,27 +68,19 @@
             });
 
 
-            $('button.tell-more-btn').click(function(){
+            
                 
-                var S_ThisTarget = $('#layout_02').offset().top - 65;
-                var S_ThisMobileTarget = $('#layout_02').offset().top - 53;
+            
+        });
 
-                if ($(window).width() < 992) { //모바일
 
-                    $('html, body').animate({
-                        scrollTop : document.body.scrollTop + S_ThisMobileTarget  
-                    }, 500);
-                }
-                else {
-                    $('html, body').animate({
-                        scrollTop : document.body.scrollTop + S_ThisTarget
-                    }, 200);
-                }
-
-                return false; 
-            });
+        $(document).ready(function(){
+            var btnTarget = document.querySelectorAll('.tell-more-btn');
+            console.log(btnTarget);
         });
     </script>
+
+   
 
 </body>
 </html>
