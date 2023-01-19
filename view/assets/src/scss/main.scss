@@ -177,6 +177,7 @@
         .content-list {
             display: flex;
             align-items: flex-start;
+            justify-content: center;
             flex-wrap: wrap;
             margin: 0 -10px;
 
@@ -184,6 +185,7 @@
             .content-list-item {
                 width: 50%;
                 padding: 0 10px;
+                margin: 0 0 24px;
                 
 
                 .content-icon-box {
@@ -207,22 +209,37 @@
                         background-position: center;
                         background-repeat: no-repeat;
                         background-size: cover;
-                        
+
+                        &.html {
+                          background-image: url(../img/html5.png);
+                        }
+
+                        &.css {
+                          background-image: url(../img/css3.png);
+                        }
+
+                        &.db {
+                          background-image: url(../img/dataBase.png);
+                        }
+ 
+                        &.react { 
+                          background-image: url(../img/react.png);
+                        }
 
                         &.responsive {
-                            background-image: url(../img/responsive.png);
+                          background-image: url(../img/responsive.png);
                         }
 
                         &.git-skill {
-                            background-image: url(../img/git.svg);
+                          background-image: url(../img/git.svg);
                         }
 
-                        &.Front-end {
-                            background-image: url(../img/front-end.png);
+                        &.skills {
+                          background-image: url(../img/skills.png);
                         }
 
                         &.Library {
-                            background-image: url(../img/library.svg);
+                          background-image: url(../img/library.svg);
                         }
 
                         
@@ -243,6 +260,7 @@
                 .content-explan-item {
                     font-size: 15px;
                     color: #767676;
+                    word-break: break-word;
 
                 }
             }
@@ -1034,11 +1052,10 @@ border-radius: 10px;
 
         .content-list-wrap {
           .content-list {
-            flex-wrap: nowrap;
-
             .content-list-item {
-              width: auto;
-              flex: 1;
+              width: 25%;
+              flex: 0 0 25%;
+              margin: 0 0 33px;
 
               .content-explan-title {
                 font-size: 25px;

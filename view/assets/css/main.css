@@ -175,6 +175,9 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 -10px;
@@ -183,6 +186,7 @@
 .theme-main .content-list-wrap .content-list .content-list-item {
   width: 50%;
   padding: 0 10px;
+  margin: 0 0 24px;
 }
 
 .theme-main .content-list-wrap .content-list .content-list-item .content-icon-box {
@@ -215,6 +219,22 @@
   background-size: cover;
 }
 
+.theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.html {
+  background-image: url(../img/html5.png);
+}
+
+.theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.css {
+  background-image: url(../img/css3.png);
+}
+
+.theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.db {
+  background-image: url(../img/dataBase.png);
+}
+
+.theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.react {
+  background-image: url(../img/react.png);
+}
+
 .theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.responsive {
   background-image: url(../img/responsive.png);
 }
@@ -223,8 +243,8 @@
   background-image: url(../img/git.svg);
 }
 
-.theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.Front-end {
-  background-image: url(../img/front-end.png);
+.theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.skills {
+  background-image: url(../img/skills.png);
 }
 
 .theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.Library {
@@ -242,6 +262,7 @@
 .theme-main .content-list-wrap .content-list .content-list-item .content-explan-item {
   font-size: 15px;
   color: #767676;
+  word-break: break-word;
 }
 
 .theme-main .portfolio-list-slide {
@@ -1063,15 +1084,12 @@
   .theme-main .timeline-block {
     display: block;
   }
-  .theme-main .content-list-wrap .content-list {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
   .theme-main .content-list-wrap .content-list .content-list-item {
-    width: auto;
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    width: 25%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    margin: 0 0 33px;
   }
   .theme-main .content-list-wrap .content-list .content-list-item .content-explan-title {
     font-size: 25px;
