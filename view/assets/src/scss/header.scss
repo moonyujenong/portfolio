@@ -3,7 +3,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50vw);
-    background-color: #484848;
+    backdrop-filter: blur(7px);
     position: fixed;
     top: 0;
     height: 55px;
@@ -148,26 +148,21 @@
             &::before {
                 content: '';
                 display: block;
-                width: 45px;
-                height: 45px;
+                width: 35px;
+                height: 35px;
                 background-color: #fed136;
                 border-radius: 100px;
                 position: absolute;
                 left: 0px;
-                top: 10px;
+                top: 15px;
                 transition: all .2s ease-in-out;
                 z-index: -1;
-                opacity: 0.6;
             }
 
             &:hover {
-                
-
                 &::before {
                     transition: all .2s ease-in-out;
                     width: 100%;
-                    opacity: 0.85;
-                    
                 }
             }
         }

@@ -1,5 +1,4 @@
 .theme-main {
-    padding-top: 55px;
     flex: auto 1;
 
     .content-layout {
@@ -146,7 +145,7 @@
         background-color: #fed136;
         font-size: 25px;
         border-radius: 4px;
-        margin-top: 20px;
+        margin-top: 50px;
         border-radius: 100px;
         position: relative;
         display: inline-block;
@@ -210,8 +209,8 @@
                         background-repeat: no-repeat;
                         background-size: cover;
 
-                        &.html {
-                          background-image: url(../img/html.png);
+                        &.html { 
+                          background-image: url(../img/html5.png);
                         }
 
                         &.css {
@@ -1021,8 +1020,6 @@ border-radius: 10px;
 
 @media (min-width:992px) {
     .theme-main {
-        padding-top: 65px;
-
         .content-layout {
             .layout-bg {
               padding: 80px 0;

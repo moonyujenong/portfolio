@@ -1,5 +1,4 @@
 .theme-main {
-  padding-top: 55px;
   -webkit-box-flex: 1;
       -ms-flex: auto 1;
           flex: auto 1;
@@ -140,7 +139,7 @@
   background-color: #fed136;
   font-size: 25px;
   border-radius: 4px;
-  margin-top: 20px;
+  margin-top: 50px;
   border-radius: 100px;
   position: relative;
   display: inline-block;
@@ -220,7 +219,7 @@
 }
 
 .theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.html {
-  background-image: url(../img/html.png);
+  background-image: url(../img/html5.png);
 }
 
 .theme-main .content-list-wrap .content-list .content-list-item .content-icon-box .content-icon.css {
@@ -1066,9 +1065,6 @@
 }
 
 @media (min-width: 992px) {
-  .theme-main {
-    padding-top: 65px;
-  }
   .theme-main .content-layout .layout-bg {
     padding: 80px 0;
   }

@@ -4,7 +4,8 @@
   left: 50%;
   -webkit-transform: translateX(-50vw);
           transform: translateX(-50vw);
-  background-color: #484848;
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   position: fixed;
   top: 0;
   height: 55px;
@@ -145,24 +146,22 @@
 .menu-list .menu-list-item .menu-list-link::before {
   content: '';
   display: block;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-color: #fed136;
   border-radius: 100px;
   position: absolute;
   left: 0px;
-  top: 10px;
+  top: 15px;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   z-index: -1;
-  opacity: 0.6;
 }
 
 .menu-list .menu-list-item .menu-list-link:hover::before {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
   width: 100%;
-  opacity: 0.85;
 }
 
 @media (min-width: 992px) {
